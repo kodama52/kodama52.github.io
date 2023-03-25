@@ -100,15 +100,17 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #777;
+		color: rgb(0, 0, 0);
 		line-height: 1.65em;
 		font-size: 15pt;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
-		text-transform: uppercase;
-		color: #888;
+		text-transform: none;
+		color: rgb(0, 0, 0);
+		margin-left: 4em;
+		margin-right: 4em;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -120,15 +122,15 @@ input, select, textarea {
 	h2 {
 		font-size: 1.65em;
 		font-weight: 400;
-		letter-spacing: 4px;
-		margin: 0 0 1.5em 0;
-		line-height: 1.75em;
+		letter-spacing: 2px;
+		line-height: 1em;
+		margin-bottom: none;
+		margin-left: 3em;
 	}
 
 	h3 {
 		font-size: 1em;
 		letter-spacing: 2px;
-		margin: 0 0 1.25em 0;
 	}
 
 	a {
@@ -191,7 +193,9 @@ input, select, textarea {
 
 	p {
 		text-align: left;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
+		margin-left: 4em;
+		margin-right: 4em;
 	}
 
 	ul, ol, dl, table, blockquote {
@@ -1526,15 +1530,7 @@ input, select, textarea {
 				width: auto;
 			}
 
-			.fadein img{
-				opacity:0.5;
-				transition: 1s ease;
-				}
-				
-				.fadein img:hover{
-				opacity:1;
-				transition: 1s ease;
-				}
+
 
 /* List */
 
@@ -1650,7 +1646,7 @@ input, select, textarea {
 				height: 2em;
 				border-radius: 2em;
 				line-height: 2em;
-				text-align: left;
+				text-align: auto;
 				box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -1780,7 +1776,7 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 		background: #ed786a;
-		color: #fff !important;
+		color: rgb(0, 0, 0) !important;
 		text-transform: uppercase;
 		border-radius: 4px;
 		border: 0;
@@ -1788,10 +1784,10 @@ input, select, textarea {
 		font-size: 1em;
 		box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
 		font-weight: 600;
-		text-align: left;
+		text-align: auto;
 		font-size: 0.85em;
 		letter-spacing: 2px;
-		padding: 0.85em 2.75em 0.85em 2.75em;
+		padding: 0.85em .75em 0.85em .75em;
 	}
 
 		input[type="button"].icon:before,
@@ -1971,7 +1967,7 @@ input, select, textarea {
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: 400;
-				color: #777;
+				color: rgb(0, 0, 0);
 				outline: 0;
 				display: block;
 			}
@@ -2011,13 +2007,13 @@ input, select, textarea {
 
 			#nav > ul > li.active > a:before,
 			#nav > ul > li:hover > a:before {
-				background: #ED786A;
+				background: #886aed;
 				color: #fff;
 			}
 
 			#nav > ul > li.active > a > span,
 			#nav > ul > li:hover > a > span {
-				color: #ED786A;
+				color: #8845e0;
 			}
 
 	.dropotron {
