@@ -106,6 +106,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-size: 2.5em;
 		font-weight: 600;
 		text-transform: none;
 		color: rgb(0, 0, 0);
@@ -129,10 +130,17 @@ input, select, textarea {
 	}
 
 	h3 {
+		font-size: 1.65em;
+		letter-spacing: 2px;
+		margin-left: 8.5em;
+		
+	}
+	h4 {
 		font-size: 1em;
 		letter-spacing: 2px;
+		margin-left: 8.5em;
+		
 	}
-
 	a {
 		-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
@@ -140,7 +148,7 @@ input, select, textarea {
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		color: #666;
 		text-decoration: none;
-		border-bottom: solid 1px #ddd;
+		border-bottom: solid 0px #ddd;
 	}
 
 		a strong {
@@ -194,8 +202,10 @@ input, select, textarea {
 	p {
 		text-align: left;
 		margin-bottom: 1em;
-		margin-left: 4em;
-		margin-right: 4em;
+		margin-left: 10em;
+		margin-right: 10em;
+		font-size: 1.4em;
+
 	}
 
 	ul, ol, dl, table, blockquote {
@@ -211,7 +221,14 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
-		width: 70em;
+		width: 300px;
+		
+/*		display: flex;
+		align-items: center; 
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 5px;
+		justify-content: center */
+		 
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1861,7 +1878,14 @@ input, select, textarea {
 		padding: 0.25em 1em 0.25em 1em;
 		margin: 0 0 2.5em 0;
 	}
-
+/* Boxes */	
+	.boxes {
+		width: 25%;
+		height: 180px;
+		border: 2px dashed rgba(255, 0, 0, 0);
+		margin: 8px 10px;
+		display: inline-block;
+	}
 /* Icons */
 
 	.icon {
@@ -1910,13 +1934,13 @@ input, select, textarea {
 	#header {
 		position: relative;
 		position: relative;
-		background: #fff;
+		background: #ffffff;
 		text-align: center;
 	}
 
 		#header > .container {
-			padding: 14em 0 7em 0;
-			border-bottom: solid 2px #e5e5e5;
+			padding: 1em 0 7em 0;
+			border-bottom: solid 0px #ffffff;
 			box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
 		}
 
@@ -1925,8 +1949,8 @@ input, select, textarea {
 			font-weight: 700;
 			color: #ed786a;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-			font-size: 3em;
-			letter-spacing: 13px;
+			font-size: 2em;
+			letter-spacing: 1px;
 		}
 
 			#header h1 a {
@@ -1941,6 +1965,11 @@ input, select, textarea {
 			font-size: 0.85em;
 			letter-spacing: 3px;
 			text-align: none;
+			margin-left: 7em;
+			margin-right: 7em;
+			text-align: center;
+
+
 		}
 
 /* Nav */
@@ -2018,7 +2047,7 @@ input, select, textarea {
 
 	.dropotron {
 		text-align: left;
-		border: solid 1px #e5e5e5;
+		border: solid 1px #ffffff;
 		border-radius: 4px;
 		background: #fff;
 		background: rgba(255, 255, 255, 0.965);
@@ -2110,7 +2139,7 @@ input, select, textarea {
 		color: #fff;
 		text-align: left;
 		border-top: solid 2px #e5e5e5;
-		border-bottom: solid 2px #e5e5e5;
+		border-bottom: solid 0px #e5e5e5;
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 		position: relative;
 		text-transform: uppercase;
@@ -2210,7 +2239,7 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		border-top: solid 2px #e5e5e5;
+		border-top: solid 0px #e5e5e5;
 		background: #f0f0f0;
 		padding: 6em 0 8em 0;
 	}
@@ -2238,7 +2267,7 @@ input, select, textarea {
 /* Copyright */
 
 	#copyright {
-		border-top: solid 2px #e5e5e5;
+		border-top: solid 0px #e5e5e5;
 		text-align: center;
 		margin-top: 6em;
 		padding-top: 4em;
@@ -2709,3 +2738,45 @@ input, select, textarea {
 				}
 
 	}
+
+
+
+	  .text {
+		font-size: 20px;
+		padding-left: 0em;
+		padding-top: 0px;
+	  }
+	  #first {
+		max-width: 300px;
+		float: left;
+		max-height: 100%;
+		background-color: rgba(0, 0, 255, 0);
+		
+		
+		
+		  
+	}
+	#second {
+		width: 800px;
+		float: left;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0);
+		color: rgb(0, 0, 0);
+		
+		 
+	
+		
+		
+	}
+
+	#clear {
+		clear: both;
+	}
+	a {
+		color: rgb(0, 0, 0);
+	}
+	* {
+		color: rgb(0, 0, 0);
+	}
+
+	
