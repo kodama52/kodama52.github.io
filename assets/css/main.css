@@ -110,8 +110,8 @@ input, select, textarea {
 		font-weight: 600;
 		text-transform: none;
 		color: rgb(0, 0, 0);
-		margin-left: 4em;
-		margin-right: 4em;
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -126,19 +126,19 @@ input, select, textarea {
 		letter-spacing: 2px;
 		line-height: 1em;
 		margin-bottom: none;
-		margin-left: 3em;
+		margin-left: 1em;
 	}
 
 	h3 {
 		font-size: 1.65em;
 		letter-spacing: 2px;
-		margin-left: 8.5em;
+		margin-left: 1em;
 		
 	}
 	h4 {
 		font-size: 1em;
 		letter-spacing: 2px;
-		margin-left: 8.5em;
+		margin-left: 1em;
 		
 	}
 	a {
@@ -202,8 +202,8 @@ input, select, textarea {
 	p {
 		text-align: left;
 		margin-bottom: 1em;
-		margin-left: 10em;
-		margin-right: 10em;
+		margin-left: 1em;
+		margin-right: 1em;
 		font-size: 1.4em;
 
 	}
@@ -234,7 +234,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.container {
-				width: 68em;
+				width: 10em;
 			}
 
 		}
@@ -1939,7 +1939,7 @@ input, select, textarea {
 	}
 
 		#header > .container {
-			padding: 1em 0 7em 0;
+			padding: 0em 0 7em 0;
 			border-bottom: solid 0px #ffffff;
 			box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
 		}
@@ -2651,7 +2651,7 @@ input, select, textarea {
 
 			#header h1 {
 				font-size: 2em;
-				letter-spacing: 8px;
+				letter-spacing: 5px;
 				line-height: 1.325em;
 			}
 
@@ -2751,13 +2751,13 @@ input, select, textarea {
 		float: left;
 		max-height: 100%;
 		background-color: rgba(0, 0, 255, 0);
-		
+		padding-left: 10%;;
 		
 		
 		  
 	}
 	#second {
-		width: 800px;
+		width: 600px;
 		float: left;
 		height: 100%;
 		background-color: rgba(255, 255, 255, 0);
@@ -2773,10 +2773,67 @@ input, select, textarea {
 		clear: both;
 	}
 	a {
-		color: rgb(0, 0, 0);
+		color: rgb(255, 72, 0);
 	}
 	* {
 		color: rgb(0, 0, 0);
 	}
 
 	
+	.grid-container {
+		display: grid;
+		float: center;
+		grid-template-columns: 25% 50% ;
+		grid-gap: 1%;
+	   
+		padding-left: 25%;
+	  }
+	  
+	  .grid-container > div {
+		background-color: rgba(128, 128, 128, 0);
+		float: center;
+
+		text-align: center,left;
+		padding-top: 15%;
+		font-size: 1.4rem;
+	  }
+
+
+
+
+	  @media (min-width: 858px) {
+		html {
+			font-size: 12px;
+		}
+	}
+	 
+	@media (min-width: 780px) {
+		html {
+			font-size: 11px;
+		}
+	}
+	 
+	@media (min-width: 702px) {
+		html {
+			font-size: 10px;
+		}
+	}
+	 
+	@media (min-width: 624px) {
+		html {
+			font-size: 9px;
+		}
+	}
+	 
+	@media (max-width: 623px) {
+		html {
+			font-size: 8px;
+		}
+	}
+
+
+
+
+
+
+
