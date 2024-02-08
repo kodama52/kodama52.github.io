@@ -1,7 +1,21 @@
-<!DOCTYPE HTML>
-<!--
-
--->
+<style>
+	* {
+	  box-sizing: border-box;
+	}
+	
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;
+	}
+	
+	/* Clearfix (clear floats) */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	</style>
 <html>
 	<head>
 		<title>AccuWeather - User Experience Design</title>
@@ -33,7 +47,7 @@
 						
 			<section id="main">
 				<div class="">
-	
+
 						<h1><b><center>AccuWeather Now</center></b></h1>
 						<br>
 						<h2><center> 2022 was the year AccuWeather integrated a 24/7 live video feature to each of their platforms. A staggering consumer base of 1.5 billion individuals has been endowed with a comprehensive feature, designed to seamlessly address all their weather-related questions. </center></h2>
@@ -44,8 +58,8 @@
 							<div class="row gtr-50 gtr-uniform">
 							
 								<img src="images/AW/overview.png"
-								width="auto"
-								height="600"
+								style="width:100%;"
+
 								>
 
 	
@@ -100,7 +114,7 @@
 				<h3><b>Putting on My Reading Glasses</b></h3>
 				<br>
 				<p>Entering the agile environment characterized by two-week sprints, I integrated into the design team during the project's midpoint. Due to my arrival post the initiation phase encompassing the creation of user personas, surveys, and interviews, a substantial portion of my initial week was devoted to acquainting myself with the intricacies of the existing AccuWeather Now feature on their website.</p>
-				<div class="image fit"><img src="images/AW/AWN SERVICE.png" alt="" /></div>
+				<div class="image fit"><img src="images/AW/AWN SERVICE.png" style="width:100%;"alt="" /></div>
 				<p>The web-version of AccuWeather Now, was at its initial stages. I found that it was a simple video player that would link users to a larger video wall. Inorder to effectively create my own experiences I wanted to first look over the previously recorded user interviews.</p>
 				<p>I learned from the recorded user interviews that many of the painpoints of the current AccuWeather Now video feature was its interaction rate. Many users did not want to interact with the video player even though it was on the landing page. Since the user arrived at the AccuWeather website for another task they found it more troublesome than helpful.</p>
 				<p>From this nice insight, I knew that I had to integrate a video feature so that it would not feel intrusive but desirable to interact with.</p>
@@ -117,55 +131,50 @@
 						<p>I not only wanted to understand the endusers but also business goals inorder to do so I started analyzing the different revenue models and features that the competitors use and hopefully identify potential opportunities for AccuWeather to establish innovative streams. </p>
 						<p>I uncovered six primary revenue streams and categorized each with a color logo, a gray logo, and an X to denote the streams in use, potential new streams, and unlikely options, respectively. </p>
 						<br>
-						<div class="image centered">
-							<div class="row gtr-50 gtr-uniform">
-							
-								<img src="images/AW/Page 3 Research Phase.png"
-								width="auto"
-								height="300"
-								>
-							
-								<img src="images/AW/Page 3b Research Phase.png">
-	
+
+
+
+
+						<div class="row">
+							<div class="column">
+							  <img src="images/AW/Page 3 Research Phase.png" alt="" style="width:100%">
+							</div>
+							<div class="column">
+							  <img src="images/AW/Page 3b Research Phase.png" alt="" style="width:100%">
+							</div>
+
 								</div>
 						</div>
 						<br>
 						<P>Next, I decided to take a look at some of the most popular video streaming applications to our targeted age ranges, from the existing user personas. Among these seven different application I found there were five standout features paired with video player features. </P>
 						<br>
-						<div class="image centered">
-							<div class="row gtr-50 gtr-uniform">
-							
-								<img src="images/AW/Page 4 features.png">
-							
-								<img src="images/AW/Page 4b features.png">
-	
+						<div class="row">
+							<div class="column">
+							  <img src="images/AW/Page 4 features.png" alt="" style="width:100%">
+							</div>
+							<div class="column">
+							  <img src="images/AW/Page 4b features.png" alt="" style="width:100%">
+							</div>
+
+						<div class="row">
+							<div class="column">
+							  <img src="images/AW/Page 5 features.png" alt="" style="width:100%">
+							</div>
+							<div class="column">
+							  <img src="images/AW/Page 5b features.png" alt="" style="width:100%">
+							</div>
+
+
+							<div class="row">
+								<div class="column">
+								  <img src="images/AW/Page 6a features.png" alt="" style="width:100%">
 								</div>
+								<div class="column">
+								  <img src="images/AW/Page 6b features.png" alt="" style="width:100%">
+								</div>
+
 						</div>
 
-						<div class="image centered">
-							<div class="row gtr-50 gtr-uniform">
-							
-								<img src="images/AW/Page 5 features.png"
-								width="auto"
-								height="600"
-								>
-							
-								<img src="images/AW/Page 5b features.png"
-								width="auto"
-								height="600"
-								>
-	
-								</div>
-						</div>
-
-						<div class="image centered">
-							<div class="row gtr-50 gtr-uniform">
-							
-								<img src="images/AW/Page 6a features.png">
-							
-								<img src="images/AW/Page 6b features.png">
-	
-								</div>
 
 				</div>
 				</section>
@@ -183,8 +192,7 @@
 			<div class="row gtr-50 gtr-uniform">
 			
 				<img src="images/AW/Frame 163.png"
-				width="auto"
-				height="600">
+				style="width:100%;">
 
 				</div>
 
@@ -211,8 +219,7 @@
 					<div class="row gtr-50 gtr-uniform">
 			
 						<img src="images/AW/Page 9 Explorations cont.png"
-						width="auto"
-						height="700">
+						style="width:80%;">
 			
 					</div>
 				</div>
@@ -229,8 +236,7 @@
 	<div class="row gtr-50 gtr-uniform">
 	
 		<img src="images/AW/Frame 164.png"
-		width="auto"
-		height="600">
+		style="width:80%;">
 
 	</div>
 
@@ -245,8 +251,7 @@
 	<div class="row gtr-50 gtr-uniform">
 	
 		<img src="images/AW/Frame 165.png"
-		width="auto"
-		height="600">
+		style="width:100%;">
 
 	</div>
 	<br>
@@ -266,17 +271,13 @@
 			<p>While I observed slight alterations to some of the designs, I am beyond happen to still see my tray design present! Notably, I took the initiative to calculate the potential ad revenue, factoring in previous metrics, projected growth, and the number of clickrates from both new and existing users. The conservative estimate revealed a promising <b>39% potential increase in ad revenue</b> attributed to the incorporation of this video feature.</p>
 			<br>
 
-			<div class="image centered">
-				<div class="row gtr-50 gtr-uniform">
+			<img src="images/AW/accuweather app live.PNG"
+			style="width:80%;">
+	
+	
 
-					
-					<img src="images/AW/iphone-12--black@2x.png"
-					width="auto"
-					height="600">
-		
-					<img src="images/AW/accuweather app live.PNG"
-					width="auto"
-					height="600">
+
+
 
 		
 				</div>
