@@ -141,6 +141,14 @@ input, select, textarea {
 		margin-left: 1em;
 		
 	}
+	h5 {
+		font-size: 1em;
+		letter-spacing: 2px;
+		margin-left: 1em;
+		color: orangered;
+		
+	}
+
 	a {
 		-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
@@ -2832,6 +2840,12 @@ input, select, textarea {
 	}
 
 
+
+	div {
+	  padding-left: 8%;
+	  padding-right: 8%;
+	
+	}
 
 
 
