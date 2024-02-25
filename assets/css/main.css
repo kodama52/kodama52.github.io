@@ -2848,6 +2848,27 @@ input, select, textarea {
 	}
 
 
-
-
+				        /* Container Styles */
+						.embed-container {
+							display: flex;
+							flex-direction: column; /* Display children vertically */
+						}
+				
+						/* Desktop Styles */
+						@media (min-width: 768px) {
+							.mobile-embed {
+								display: none;  /* Hide mobile embed on desktop */
+							}
+						}
+				
+						/* Mobile Styles */
+						@media (max-width: 767px) {
+							.desktop-embed {
+								display: none;  /* Hide desktop embed on mobile */
+							}
+				
+							.mobile-embed {
+								display: block; /* Display mobile embed as a block (optional, in case it's needed) */
+							}
+						}
 
