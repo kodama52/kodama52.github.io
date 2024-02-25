@@ -2862,7 +2862,7 @@ input, select, textarea {
 						}
 				
 						/* Mobile Styles */
-						@media (max-width: 767px) {
+						@media (max-width: 700px) {
 							.desktop-embed {
 								display: none;  /* Hide desktop embed on mobile */
 							}
