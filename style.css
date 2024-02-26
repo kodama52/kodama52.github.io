@@ -1,0 +1,170 @@
+/* Existing styles */
+
+/* Responsive embed adjustments */
+@media (max-width: 768px) {
+    .desktop-embed {
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+    .mobile-embed {
+        display: none;
+    }
+}
+
+/* Centering the navigation bar */
+nav.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav.container-fluid > ul:first-child {
+    flex-grow: 1;
+}
+
+nav.container-fluid ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav.container-fluid ul li {
+    margin: 0;
+}
+
+/* Background color, font, and global text color */
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    color: #333; /* Dark gray text color */
+
+}
+
+/* Specific text colors for paragraphs and headings */
+p {
+    color: #555;
+    margin: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+}
+
+/* New hover effect for navigation links */
+nav.container-fluid ul li a:hover {
+    color: #800080; /* Purple color */
+}
+/* Custom hyperlink colors */
+a {
+    color: #000000; /* New default hyperlink color */
+}
+
+a:hover {
+    /* This will override the nav specific hover color if you want a universal hover color */
+    color: #800080; /* Purple color for hover */
+}
+
+a:visited {
+    color: #551A8B; /* Darker purple for visited links */
+}
+.email-link, .email-link:visited, .email-link:hover, .email-link:focus {
+    color: #800080; /* Purple */
+}
+.special-text strong {
+    color: #800080; /* Example: Purple */
+}
+li.me{
+    color: #252525; /* Example: Purple */
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+.header-img {
+    max-width: 100%;
+    height: auto;
+    
+}
+.section {
+    margin-bottom: 2rem;
+}
+#quotes h6 {
+    color: #FF5733; /* Example color: A shade of orange */
+}
+h2 {
+    margin-top: 5px; /* Reduced bottom margin */
+}
+p {
+    margin-bottom: 5px; /* Reduced top margin */
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .centered-title {
+    text-align: center; /* Centers the text */
+    color: #FF5733; /* Change to your desired color */
+}
+.centered {
+    text-align: center; /* Centers the text */
+}
+
+.bradley {
+    text-align: right;
+}
+/* style.css content */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.centered-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+.tile-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tile {
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tile img {
+    width: 100%;
+    height: auto;
+}
+
+.tile-text {
+    text-align: center;
+    padding: 10px;
+}
