@@ -1,272 +1,292 @@
-<!DOCTYPE HTML>
-<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
--->
-<html>
-	<head>
-		<title>CATA Bus</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="">
-		<div id="page-wrapper">
+    <title>CATA Bus - Mobile App Redesign</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li class="me"><b>Jonathan Markowski's Portfolio</b></li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a href="index.html" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="accuweather.html">AccuWeather Now</a>
+                    <a href="catabus.html">CATA Bus</a>
+                    <a href="healthactivity.html">Health & Activities</a>
+                    
+                    <!-- Add more project links here as needed -->
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="about.html" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="https://jmarkowski.xyz/assets/RESUME.pdf" target="_blank" class="dropbtn">Resume</a>
+                <div class="dropdown-content">
+                </div>
+            </li>
+        </ul>
+    </nav>
 
-			<!-- Header -->
-				<section id="header">
-					<div class="container">
-
-						<!-- Logo -->
-						<img src="assets/css/images/cata/page 1.png" 
-						width="600"
-						height="auto"
-						>
-
-						
-						<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a  href="index.html"><span>Projects</span></a></li>
-								<li><a  href="about.html"><span>About</span></a></li>
-								<li><a  href="assets/RESUME.pdf"><span>Resume</span></a></li>
-							</ul>
-						</nav>
-
-				</div>
-			</section>
-
-			<!-- Main -->
-			<div id="main">
-				
-				<!-- Post -->
-				<section class="post">
-
-					
-					<h2><center> CATA Mobile application provides real-time information to bus riders.</center></h2>
-					<br>
-
-				<button type="button" <h1> <a href="#live">Jump to the redesign </a> </h1> </button>
-					<br>
-					
-
-					<h1>The Challenge</h1>
-					<p>Frequent application crashes, unintuitive features, and unreliable bus information caused the original CATA application a <b>62% drop in user downloads</b> with a poor customer rating of <b>1.7/5.0</b> on the App Store.</p>
-					<br>
-
-					<h1>Key Objective</h1>
-					<p>CATA Bus app should allow users to <b>track their bus location in real-time </b> and provide <b>alerts & notifications</b> about delays, cancellations, or changes in the bus schedules, <b>enabling users to plan</b> their arrival time accordingly.</p>
-					<br>
-
-					<!--Finished Pictures Overview-->
-					<h1>Solution Summary</h1>
-					<p>In my role as a UX/UI Designer, <b>I implemented a comprehensive life cycle of user experience design and testing</b>. This involved researching <b>user needs</b> and data points, conducting thorough user research through <b>personas</b> and <b>surveys</b>, creating initial <b>prototypes</b> and <b>wireframes</b>, analyzing user feedback and <b>iterating the design</b> through multiple loops and <b>AB testing</b>, and ultimately designing the MVP to meet the user's needs.</p>
-					<p>After conducting user research through surveys, which yielded <b>83 responses</b>, and analyzing the feedback, I utilized the UX design process holistically to create a new CATA application. This involved designing <b>new features</b> such as favorite bus routes, quick actions on the landing screen, and quick checks for detailed bus information, all of which were <b>inspired by the physical bus schedule</b>. The resulting application offers an intuitive user experience that caters to users of all digital skill levels.</p>
-					<p>The redesigned CATA application has had a significant positive impact on the user experience, resulting in a <b>42% increase in user downloads</b>, a <b>76% reduction in app crashes</b>, and a <b>32% decrease in app load time</b>.</p>
-					<br>
-
-					<div class="row">
-						<div class="column" >
-
-							
-
-						</div>
-						<div class="column" >
-
-							<h2>Project Details</h2>
-							<br>
-
-							<h1><u>Design Process</u></h1>
-
-					<p><a href="#previous"> Analyze The Previous Application </a></p>
-					<p><a href="#research">  Understanding the user </a></p>
-					<p><a href="#feedback"> Synthesizing What Matters </a></p>
-					<p><a href="#proto"> Creating Something Real </a></p>
-					<p><a href="#mvp"> MVP </a></p>
-					<p><a href="#live"> Live Results </a></p>
-						</div>
-
-						<br>
-						<br>
-						<div class="column" >
-
-							<h2>My Details</h2>
-							<br>
-
-							<h1><u>My Role</u></h1>
-							<p>UX Designer, UI Designer</p>
-
-							<h1><u>Tools</u></h1>
-							<p><b>Note pad + pen</b>- notes for live interviews, sketches to ideate, etc. </p>
-							<p><b>Adobe Creative Cloud</b>- userflows, wireframes, mockups, prototypes.</p>
-							<p><b>Zoom</b>- to carry out several user interviews for digital prototypes.</p>
-
-							<h1><u>Duration</u></h1>
-							<p>17 months</p>
-
-						</div>
+    <div class="container">
+        <header class="section">
+            <h1 class="centered-title">CATA Bus: Mobile App Redesign</h1>
+			<h5 class="centered">As of 2019, a total of 338,000 Pennsylvania residents relied on public transit as their primary mode of commuting. Fast forward to 2022, and we witness a remarkable year-over-year surge of approximately 39 percent in transit usage.</h2>
+           <br>
+            <h5 class="centered">While pursuing my university studies, I had the privilege of being part of a new product team tasked with revamping the user experience for a rapidly expanding industry. </h5>
+                <img src="images/cata/cata.gif" alt="Streamline App Interface" class="header-img">
+            <p>In adherence to the terms of my confidentiality agreement, certain proprietary details have been excluded from the provided case study.</p>
+        </header>
+        <br>
+        <br>
+        <br>
 
 
-					</div>
-					<br>
-					<br>
-					<br>
-		
+        <section class="section">
+            <h2>My Role</h2>
+            <p>During my two-year internship, I collaborated within a dynamic Design team comprising four individuals. This close-knit group included a designer, two developers, and a senior marketer, with whom I worked closely to achieve our objectives. </p> 
+            
+            <P>My internship concluded upon the successful launch of the application, allowing me to take part in the entire lifecycle of the project from inception to completion. </P>
+            <br>
+            <br>
+            <br>
+            <br>
+             </section>
+        
+        <section class="section">
+            <p>Learning The Service</p>
+            <h2>Making My Checklist</h2>
+            <p>Upon joining CATA design team, I had the challenge to understand the current situation with the mobile application. After some brief research I found that the current application suffers from frequent crashes causing unreliable bus information and many hidden features, which has led to a <b>significant 62% decrease in user downloads</b> for the original CATA application. Additionally, it has garnered a dismal customer rating of 1.7 out of 5.0 on the App Store, highlighting the dissatisfaction among users with its performance and usability.</p>
+            <br>
+            <br>
+            <p class="centered">• • •</p>
+            <p>Following discussions with key stakeholders, it has been identified that the CATA Bus app should focus on the following key features:</p>
+            <p><b>1).</b> <u>Real-time Bus Tracking</u>: Implement functionality that allows users to track the location of buses in real-time. This will enable users to plan their journeys more effectively by knowing the exact whereabouts of their bus. </p>
+            <p><b>2).</b> <u>Alerts and Notifications</u>: Incorporate a system for delivering alerts and notifications to users regarding delays, cancellations, or changes in bus schedules. This feature will empower users to adjust their travel plans accordingly, minimizing inconvenience and disruptions.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+        
+        <section class="section">
+            <p>Learning The Users </p>
+            <h2>Meet & Greet</h2>
+            <div class="image centered">
+                <div class="row gtr-50 gtr-uniform">
+        
+                    <img src="images/cata/Group.png"
+                    style="width:20%;">
+        
+                </div>  
+                </div>
+            <p>In order to appropriately enhance the user experience I wanted to know precisely what our users thought of the application and what they wanted us to add. So instead of starting with user personas and surveys I went out.</p>
+            <p>Venturing out to bus stops, I engaged in meaningful conversations with diverse groups of individuals. Eight generous people graciously shared their time, enabling me to uncover their unique needs and desires. Drawing from these interactions, I swiftly crafted a paper prototype, poised to gather additional feedback from several more cohorts. In total, I conversed with 11 students, 3 faculty members, and 6 visitors.</p>
+            <br>
+            <div class="row">
+                <div class="column">
+                  <img src="images/cata/IMG_2376.JPEG" alt="" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="images/cata/IMG_2377.JPEG" alt="" style="width:100%">
+                </div>
+                </div>
+            <br>
+            <p>Guiding participants through our current CATA application, I tasked them with finding specific features while encouraging them to vocalize their assumptions. This exercise unearthed a plethora of insights, as I diligently recorded their pain points and conjectures.</p>
+            <br>
+            <p>•<b>80%</b> of users preferred the landing page to be displayed as a map view</p>
+            <p>•<b>55%</b> of users expressed wanting a section for favorite routes and bus schedules.</p>
+            <p>•<b>35%</b> agree there should be an easily accessible method to reach the bus schedule feature</p>
+            <br>
+            <br>
+
+            <br>
+            <br>
+
+
+        <section class="section">
+            <p>Discovery + Iterations</p>
+            <h2>Where's My Bus?</h2>
+            <p>To guarantee that my designs would be both impactful and meaningful, I decided to take some notes about our currently live app. </p>
+            <p>In reviewing the current iteration of the app, I observed several graphical anomalies in the top bar, along with crucial information gaps for riders within the bus list and bus stop location sections. These deficiencies were flagged with an orange icon for further attention.</p>
+
+            
+            <div class="image centered">
+                <div class="row gtr-50 gtr-uniform">
+        
+                    <img src="images/cata/Frame 161.png"
+                    style="width:40%;">
+        
+                </div>  
+                </div>
+            <p>From my field notes and observations of my interviews I started to redesign our landing page of the mobile app by adding several new features; </P>
+              <p>1. <u>Favorite pill menu</u> - allows users to easily switch between different bus routes.</p>
+              <p>2. <u>Visual Representation</u> of the bus path - create visually accessible graphic to assist riders when deciding a bus stop. </p>
+              <p>3. <u>Bus Stop Information</u> - added a pop-out to give more information about the specific bus stop riders choose.</p>
+                <br>
+                <div class="image centered">
+                    <div class="row gtr-50 gtr-uniform">
+            
+                        <img src="images/cata/Frame 162.png"
+                        style="width:50%;">
+            
+                    </div>  
+                    </div>
+                    <br>
+                    <br>
+            <p>In order to gain appropriate feedback from our end-users, I created a survey to gather data to identify trends the riders enjoy and dislike on the newest mock-up of the app. I received <b>83 responses</b>. I then classified the data into the several meaningful groups.</p>
+            <br>
+            
+            <p class="centered-title">"The added bus path is great, but I want more information about each stop."</p>
+            <p class="centered-title">"The layout looks cool, but I think there are too many colors for what is needed."</p>
+            <p class="centered-title">"The design is improved, though, there should be easier ways to get information (bus stops) quickly."</p>
+                   <br>
+                    
+         <div class="row">
+
+                </div>
+                <br>
+            <br>
+            <br>
+            <br>
+        </section>
+
+        <section class="section">
+            <p> Final Design </p> 
+            <h2>Ticket To Ride</h2>
+            <p>Following multiple  feedback loops, design iterations, and AB testing, I finalized the designs. I decided to change the application's color from blue to red to match the company's logo color. Based off of the rider's feedback, I added several key features, including, a search bar, bus stop details, and a favorite route menu.</p>
+            <br>
+            <div class="image centered">
+                <div class="row gtr-50 gtr-uniform">
+        
+                    <img src="images/cata/search.gif"
+                    style="width:30%;">
+
+        
+                </div>  
+                </div>
+                <p>The search bar was implemented for riders to quickly find the bus route or choose from the recently searched list. It was ultimately decided to keep the search bar at the top of the app instead of the bottom third because 48% of the student riders were more familiar with similar features in similar applications. </p>
+                <br>
+                <br>
+
+                <div class="image centered">
+                    <div class="row gtr-50 gtr-uniform">
+            
+
+
+                        <img src="images/cata/Frame 163.png"
+                        style="width:80%;">
+            
+                    </div>  
+                    </div>
+                <p>To address the initial confusion with the application, I've developed a comprehensive pop-up feature tailored specifically for accessing bus stop information. This pop-up closely resembles the traditional bus schedules displayed at each stop, providing riders with a familiar interface. The aim is to assist passengers of all ages in quickly locating and interpreting relevant information without the need for extensive relearning. By streamlining the process, riders can focus on catching their bus with ease, rather than grappling with the intricacies of an app.</p>
+               <br>
+               <br>
+                <div class="image centered">
+                    <div class="row gtr-50 gtr-uniform">
+            
+                        <img src="images/cata/settings.gif"
+                        style="width:20%;">
+            
+                    </div>  
+                    </div>
+                <p>Recognizing the significant international presence at Penn State, with over 10% of the student body being international, I made it a priority to enhance the accessibility of our application. As part of this effort, I incorporated a comprehensive settings menu, empowering users to easily switch between units, including the option to convert measurements to metric.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </section>
+
+
+        <section class="section">
+            <p> Impact </p>
+            <h2>Ride To The Moon</h2>
+            <div class="image centered">
+                <div class="row gtr-50 gtr-uniform">
+                    <img src="images/cata/cata.gif"
+                    style="width:70%;">
+                </div>   
+                </div>
+            <p>We launched the application after extensive A/B testing and user interviews via usertesting.com. Over this two week period, my team saw around 60% of participants picking the newer iteration of the application over the original. This gave my team the confidence to have our redesign go live.</p>
+             <p>Over the next 4 months my team and witnessed incredible statistics;</p> 
+             <h4>•42% increased user downloads</h4>
+             <h4>•80% of Penn State Students switched from third party apps to CATA's official app</h4>
+             <h4>•32% Decreased  in user reports of inaccurate data</h4>
+             <p>All of these statistics proved to my team and myself that our redesign had positive impacts to the user experience of the everyday rider.</p>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+
+        <section class="section">
+            <p> Reflections </p>
+            <h2>Final Destination</h2>
+            <p>Navigating through a four-semester-long internship, I encountered a series of challenging situations, particularly as this marked my inaugural venture into the realm of UX design beyond the confines of academia. Having a lot of theoretical knowledge from my studies, I was eager to apply these principles to a live project. However, the transition from theory to practice proved to be more difficult than I had anticipated, presenting me with a many roadblocks and invaluable learning opportunities.</p>          
+            <p>One of the most significant challenges I faced at the outset was grappling with imposter syndrome, a common phenomenon among newcomers to any field. As I delved into the intricacies of real-world UX design, I couldn't shake the feeling of inadequacy and self-doubt, questioning whether I truly belonged in this professional environment. Overcoming this internal barrier required much effort to <b>acknowledge my achievements and embrace the learning journey ahead</b>, rather than succumbing to feelings of unworthiness.</p>
+            <p>Communication issues also emerged as a recurring challenge, particularly within the context of team dynamics. Collaborating with diverse individuals with varying backgrounds and perspectives necessitated effective communication and collaboration. However, miscommunications and misunderstandings occasionally arose, leading to friction and discord within the team. Addressing these communication challenges required <b>patience</b>, <b>empathy</b>, and a <b>willingness</b> to actively listen and engage with my colleagues to foster a more cohesive and productive working environment.</p>
+            <p>Furthermore, I grappled with the tendency to rely on assumptions rather than grounding my decisions in empirical data. As a novice UX designer, I often found myself jumping to conclusions or making design choices based on intuition rather than conducting thorough research and analysis. Recognizing the limitations of this approach, I endeavored to create a more data-driven mindset, <b>prioritizing user research and usability testing to inform my design decisions effectively</b>.</p>
+            <p>In hindsight, these challenges, though difficult at the time, served as invaluable learning experiences that ultimately shaped me into a more resilient, adaptable, and empathetic designer. By confronting imposter syndrome head-on, fostering open and transparent communication within the team, and prioritizing data-driven decision-making, <b>I emerged from my internship with newfound confidence and a deeper understanding of the complexities of UX design in practice</b>.</p>
+            <br>
+           
+        </section>
+        <br>
+        <br>
+        <br>
+       
+
+    <footer class="container">
+        <small>
+            &copy; 2024 • Imagined, Designed, & Coded By Jonathan Markowski. • <a href="https://www.linkedin.com/in/jonathan-markowski/" ><span target="_blank" class="label">LinkedIn</span></a> • <a href="mailto:markowski.ux@gmail.com" target="_blank" class="email-link"><span class="icons"></span>Contact Me</a>
+
+
+        </small>
+    </footer>
+
+
+
+<!-- Default Statcounter code for jmarkowski Portfolio https://jmarkowski.xyz/ -->
+<script type="text/javascript">
+    var sc_project=12544975; 
+    var sc_invisible=1; 
+    var sc_security="06a824e2"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="real time web
+    analytics" href="https://statcounter.com/"
+    target="_blank"><img class="statcounter"
+    src="https://c.statcounter.com/12544975/0/06a824e2/1/"
+    alt="real time web analytics"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 
 
 
-
-				<a id="previous"> </a>
-					<h2><b>Analyze The Previous Application</b></h2>
-					<br>
-					<p>The prior design exhibited a multitude of deficiencies that greatly hindered its usability and efficiency. This, in turn, resulted in a noticeable decline in downloads and motivated users to explore other application options.</p>
-					<br>
-
-					<div class="image centered">
-						<div class="row gtr-50 gtr-uniform">
-						
-							<img src="assets/css/images/cata/Previous 1.png">
-						
-							<img src="assets/css/images/cata/Previous 2.png">
-
-							</div>
-						</div>
-
-				<a id="research"> </a>
-					<h2>Understanding The User</h2>
-					<br>
-
-					<p>Upon identifying the target user groups, <b>I conducted 20 in-depth interviews</b> to gain a comprehensive understanding of their <b>unique needs</b>. Utilizing this valuable information in conjunction with the product specifications and user behaviors, I crafted an initial <b>paper prototype that was presented during the interviews</b>.</p>
-					<p>Of the 20 individuals interviewed, <b>11 were students</b>, <b>3 were faculty members</b>, and <b>6 were visitors</b>. Despite their attempts to use the official CATA Bus application, a majority of participants experienced significant issues that led them to switch to competing applications.</p>
-					
-					<div class="image centered">
-						<img src="assets/css/images/cata/Group.png"
-						width="auto"
-						height="250"
-						>
-					</div>
-
-					<p>In order to gather further insight, I conducted a comprehensive user survey wherein I provided a <b>side-by-side comparison</b> of my paper prototype, the current CATA Bus app, and the competitor's app. During this process, <b>I encouraged participants to share their assumptions and impressions regarding the features of each prototype and application</b>.</p>
-					<br>
-
-
-					
-
-			
-
-				<a id="feedback"> </a>
-					<h2>Synthesizing What Matters</h2>
-					<br>
-					<div class="image centered">
-						<div class="row gtr-50 gtr-uniform">
-						
-							<img src="assets/css/images/cata/Previous 3.png">
-						
-							<img src="assets/css/images/cata/Previous 4.png">
-
-							</div>
-						</div>
-
-						<img src="assets/css/images/cata/Previous 7.png">
-
-
-					<br>
-					<br>
-
-				<a id="proto"> </a>
-					<h2>Creating Something Real</h2>
-					<br>
-					<p>Drawing upon user feedback, I crafted a digital prototype that incorporates the desired features.</p>
-					
-					<div class="image centered">
-						<div class="row gtr-50 gtr-uniform">
-						
-							<img src="assets/css/images/cata/Previous 5.png">
-						
-							<img src="assets/css/images/cata/Previous 6.png">
-
-							</div>
-						</div>
-
-				<br>	
-				
-				<a id="mvp"> </a>
-					<h2>MVP</h2>
-					<br>
-					<p>Following multiple feedback sessions, design iterations, and AB testing, I finalized the designs below for the Minimum Viable Product (MVP) of the application.</p>
-					<div class="image fit"><img src="assets/css/images/cata/Page 8 Landing Page.png" alt="" /></div>
-					<div class="image fit"><img src="assets/css/images/cata/Page 9 Search Bar.png" alt="" /></div>
-					<div class="image fit"><img src="assets/css/images/cata/page10.png" alt="" /></div>
-					<div class="image fit"><img src="assets/css/images/cata/Page 11 Schedules.png" alt="" /></div>
-					<div class="image fit"><img src="assets/css/images/cata/Page 12 Favorites.png" alt="" /></div>
-					<div class="image fit"><img src="assets/css/images/cata/Page 13 Favortie details.png" alt="" /></div>
-
-
-				
-					<h2>Live Results</h2>
-					<a id="live"> </a>
-					<br>
-
-					<div class="image centered">
-						<div class="row gtr-50 gtr-uniform">
-						
-							<img src="assets/css/images/cata/mvp.gif" 
-							width="356" 
-							height="717" />
-						
-							<img src="assets/css/images/cata/end.png" 
-							width="auto" 
-							height="644" />
-
-							</div>
-						</div>
-
-					
-
-
-
-
-		</div>
-
-			<!-- Footer -->
-						
-			<div id="copyright" class="container">
-				<ul class="links">
-					<li>&copy; 2024.</li><li>Imagined, Designed, & Coded By Jonathan Markowski.</a></li>
-					<li><a href="https://www.linkedin.com/in/jonathan-markowski/" ><span target="_blank" class="label">LinkedIn</span></a></li>
-					<li><a href="mailto:markowski.ux@gmail.com" target="_blank" ><span class="icons"></span>Contact Me</a></li>
-				</ul>
-			</div>
-		</section>
-
-</div>
-
-
-			<!-- Default Statcounter code for jmarkowski Portfolio https://jmarkowski.xyz/ -->
-			<script type="text/javascript">
-				var sc_project=12544975; 
-				var sc_invisible=1; 
-				var sc_security="06a824e2"; 
-				</script>
-				<script type="text/javascript"
-				src="https://www.statcounter.com/counter/counter.js"
-				async></script>
-				<noscript><div class="statcounter"><a title="real time web
-				analytics" href="https://statcounter.com/"
-				target="_blank"><img class="statcounter"
-				src="https://c.statcounter.com/12544975/0/06a824e2/1/"
-				alt="real time web analytics"
-				referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-				<!-- End of Statcounter Code -->
-
-				
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
