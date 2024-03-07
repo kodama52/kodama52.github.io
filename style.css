@@ -20,9 +20,13 @@ nav.container-fluid {
     flex-wrap: wrap;
 }
 
-nav.container-fluid > ul:first-child {
-    flex-grow: 1;
-}
+nav.container-fluid > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the content of the first ul */
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+  }
 
 nav.container-fluid ul {
     margin: 0;
