@@ -60,7 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* New hover effect for navigation links */
 nav.container-fluid ul li a:hover {
-    color: #800080; /* Purple color */
+    color: #800080; /* Keeps the purple color on hover */
+    text-decoration: underline; /* Adds underline on hover */
 }
 /* Custom hyperlink colors */
 a {
@@ -72,23 +73,23 @@ a:hover {
     color: #800080; /* Purple color for hover */
 }
 
-a:visited {
-    color: #551A8B; /* Darker purple for visited links */
-}
+
 .email-link, .email-link:visited, .email-link:hover, .email-link:focus {
     color: #800080; /* Purple */
 }
 .special-text strong {
-    color: #800080; /* Example: Purple */
+    color: #000000; /* Example: Purple */
 }
 li.me{
-    color: #252525; /* Example: Purple */
+    color: #000000; /* Example: Purple */
+    margin-bottom: 0; /* Or a smaller value depending on the current spacing */
+    padding-bottom: 0; /* Or adjust as needed */
 }
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-    background: white;
+    background: f0f0f0;
 }
 .header-img {
     max-width: 100%;
@@ -175,7 +176,7 @@ p {
 
 .dropbtn {
     background-color: #4caf4f00;
-    color: #800080;
+    color: #000000;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -230,4 +231,52 @@ p {
     font-family: 'Inter', sans-serif; /* Replace 'Your Font Family' with the font you want */
     font-size: 16px; /* Adjust the size as needed */
     
+}
+.footer-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.floating-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    /* If you want a specific height for your navbar */
+    height: 60px; /* Example height, adjust as needed */
+}
+
+.floating-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically, works with a specified navbar height */
+    height: 100%; /* Take the full height of the navbar */
+}
+
+.floating-nav ul li {
+    margin: 0 10px;
+}
+
+.floating-nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+main {
+    padding-bottom: 80px; /* Adjusted to accommodate navbar height if needed */
+}
+nav.container-fluid > ul + ul {
+    margin-top: 0; /* Removes extra space between the first `ul` and subsequent `ul` */
 }

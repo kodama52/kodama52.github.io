@@ -45,7 +45,36 @@
             <h5 class="centered">While pursuing my university studies, I had the privilege of being part of a new product team tasked with revamping the user experience for a rapidly expanding industry. </h5>
                 <img src="images/cata/cata.gif" alt="Streamline App Interface" class="header-img">
             <p>In adherence to the terms of my confidentiality agreement, certain proprietary details have been excluded from the provided case study.</p>
+
+            <nav class="floating-nav">
+                <ul>
+                    
+
+                    <li><a href="#section3">Research</a></li> 
+                    <li><a href="#section4">Meeting Users</a></li>
+                    <li><a href="#section5">Iterations</a></li>                    
+                    <li><a href="#section7">Final Design</a></li>  
+                    <li><a href="#section9">Impact</a></li>                  
+                    <li><a href="#section8">Reflections</a></li>
+                    
+                </ul>
+            </nav>
         </header>
+
+        <script>
+            // JavaScript to toggle navbar visibility based on scroll position
+            window.addEventListener('scroll', function() {
+                var navbar = document.querySelector('.floating-nav');
+                if (window.pageYOffset > 500) {
+                    navbar.style.visibility = 'visible';
+                    navbar.style.opacity = '1';
+                } else {
+                    navbar.style.visibility = 'hidden';
+                    navbar.style.opacity = '0';
+                }
+            });
+            </script>
+
         <br>
         <br>
         <br>
@@ -62,7 +91,7 @@
             <br>
              </section>
         
-        <section class="section">
+        <section class="section" id="section3">
             <p>Learning The Service</p>
             <h2>Making My Checklist</h2>
             <p>Upon joining CATA design team, I had the challenge to understand the current situation with the mobile application. After some brief research I found that the current application suffers from frequent crashes causing unreliable bus information and many hidden features, which has led to a <b>significant 62% decrease in user downloads</b> for the original CATA application. Additionally, it has garnered a dismal customer rating of 1.7 out of 5.0 on the App Store, highlighting the dissatisfaction among users with its performance and usability.</p>
@@ -78,7 +107,7 @@
             <br>
         </section>
         
-        <section class="section">
+        <section class="section" id="section4">
             <p>Learning The Users </p>
             <h2>Meet & Greet</h2>
             <div class="image centered">
@@ -113,7 +142,7 @@
             <br>
 
 
-        <section class="section">
+        <section class="section" id="section5">
             <p>Discovery + Iterations</p>
             <h2>Where's My Bus?</h2>
             <p>To guarantee that my designs would be both impactful and meaningful, I decided to take some notes about our currently live app. </p>
@@ -160,7 +189,7 @@
             <br>
         </section>
 
-        <section class="section">
+        <section class="section" id="section7">
             <p> Final Design </p> 
             <h2>Ticket To Ride</h2>
             <p>Following multiple  feedback loops, design iterations, and AB testing, I finalized the designs. I decided to change the application's color from blue to red to match the company's logo color. Based off of the rider's feedback, I added several key features, including, a search bar, bus stop details, and a favorite route menu.</p>
@@ -208,7 +237,7 @@
         </section>
 
 
-        <section class="section">
+        <section class="section" id="section9">
             <p> Impact </p>
             <h2>Ride To The Moon</h2>
             <div class="image centered">
@@ -232,7 +261,7 @@
             <br>
         </section>
 
-        <section class="section">
+        <section class="section" id="section8">
             <p> Reflections </p>
             <h2>Final Destination</h2>
             <p>Navigating through a four-semester-long internship, I encountered a series of challenging situations, particularly as this marked my inaugural venture into the realm of UX design beyond the confines of academia. Having a lot of theoretical knowledge from my studies, I was eager to apply these principles to a live project. However, the transition from theory to practice proved to be more difficult than I had anticipated, presenting me with a many roadblocks and invaluable learning opportunities.</p>          
