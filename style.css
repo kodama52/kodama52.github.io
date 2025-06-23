@@ -89,6 +89,16 @@ h7{
   margin-left: 13px;
   margin-right: 13px;
 }
+h8{
+  color: #656565;
+  margin: 13px 0;
+  font-size: 16px; 
+  margin-top: 1px;
+  margin-bottom: 0px;
+  margin-left: 13px;
+  margin-right: 13px;
+  text-align: left;
+}
 
 /* New hover effect for navigation links */
 nav.container-fluid ul li a:hover {
@@ -504,3 +514,57 @@ body.two-column .container {
   }
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-tile {
+  background-color: #ffffff00;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+ 
+}
+
+
+
+.project-tile img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.tile-info {
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.tile-title {
+  font-size: 1.25rem;
+  color: #3e2f25;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.tile-subtitle {
+  font-size: 1rem;
+  color: #a36b45;
+  margin-bottom: 0.5rem;
+}
+
+.tile-link {
+  font-size: 1rem;
+  color: #3e2f25;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: left;
+}
+
+.tile-link:hover {
+  text-decoration: underline;
+}
