@@ -43,7 +43,7 @@ nav.container-fluid ul li {
 
 /* Background color, font, and global text color */
 body {
-    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-family: 'Inter'; /* Use Inter font */
     margin: 40px;
     overflow-x: hidden;
 
@@ -374,7 +374,7 @@ nav.container-fluid > ul + ul {
       
 
         .box{
-          background-color:#dcdcdc;
+          background-color:#dfdfdf;
           padding:0px;
           border-radius:8px;
           color:#fff;
@@ -385,6 +385,7 @@ nav.container-fluid > ul + ul {
           font-family:sans-serif;
           
         }
+
       
       }
       
