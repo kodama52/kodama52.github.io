@@ -473,22 +473,31 @@ nav.container-fluid > ul + ul {
 
 /* General Styles */
 
-
+html, body {
+  overflow-x: hidden;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr; /* Single column by default */
   gap: 20px;
   padding: 20px;
 
-  margin: 0auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  margin: 0 auto;
+
   max-width: 1200px;
 
  
-  max-width: 100%;
   overflow-x: hidden; /* important if children overflow */
   
+
+
+
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
 }
 
 .left, .right {
