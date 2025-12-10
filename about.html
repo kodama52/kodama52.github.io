@@ -2,115 +2,211 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/totoro.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <!-- Load Tailwind CSS CDN for easy, single-file responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import and styling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+        /* Global button style for consistency */
+        .primary-button {
+            box-shadow: 0 4px 6px rgba(45, 100, 245, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .primary-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(45, 100, 245, 0.6);
+        }
+        /* Style for the project visual placeholder */
+        .project-visual {
+            height: 400px;
+            background-color: #e0e7ff; /* light indigo */
+            border: 4px dashed #6366f1; /* indigo-500 */
+        }
+        /* Ensure max-w-7xl content is centered and responsive */
+        .max-w-7xl {
+            max-width: 80rem; /* Increased max width for content */
+        }
 
-    <title>About</title>
+        /* New CSS to enforce 1:1 ratio for the Current Image Grid */
+        .aspect-square-container {
+         /* Tailwind's aspect-square class does this, but this is the underlying CSS */
+         aspect-ratio: 1 / 1; 
+        }
+
+        .current-image {
+          /* Ensure the image fills its square container and crops nicely */
+          object-fit: cover; 
+          width: 100%;
+          height: 100%;
+        }
+    </style>
 </head>
-<body>
-    <nav class="container-fluid">
-        <ul>
-          <li class="dropdown">
-            <a href="index.html" class="dropbtn">Projects ⌄</a>
-            <div class="dropdown-content">
-              <a href="sce.html">SCE Redesign</a>
-              <a href="accuweather.html">AccuWeather Now</a>
-              <a href="catabus.html">CATA Bus</a>
-              <a href="healthactivity.html">Health & Activities</a>
-            </div>
-          </li>
-          <li><a href="about.html" class="dropbtn">About</a></li>
-          <li><a href="https://markowski.me/assets/RESUME.pdf" target="_blank" class="dropbtn">Resume</a></li>
-        </ul>
-      </nav>
 
-    <div class="container">
-        <header class="section">
-            <div class="image-container">
-                <img src="images/about/me.png" alt="thats me" class="centered-image">
-            </div>
-        </header>
-        
-        
+<body class="text-gray-800">
 
 
-        <section class="section">
+    <!-- 1. Navigation Header (Responsive & Sticky) -->
+   <header class="shadow-md bg-white sticky top-0 z-10 relative"> 
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             
-            <p>Hey there, I'm a UX/UI Designer with a unique blend of <b> creativity and entrepreneurship </b>. I love tackling design challenges and creating solutions that make a positive impact on people's lives.</p>
-			<p>My design process starts an empathetic approach to understand the needs of the users. I'm always observing and listening to people's problems to gain insight and inspiration.</p>
-			<p>I'm not just a designer - I'm also a strategic team leader. I am the founder of a competitive esports team, at Penn State University. I led my team to many victories(Rated 11th in NA) by creating strategies before the match and during by making split second decisions that impacted the entire match with my teammates.						</p>
-			<p>In my free time, you'll find me tinkering with 70's cassette deck or gadgets that caught my interest or participating in competitive activities. I'm always seeking out new opportunities to learn and grow, and I believe that this mindset is essential to creativity.</p>
-			<p>If you're looking for a designer who is passionate, creative, and always up for a challenge, I'd love to connect with you. Drop me a message and let's <a href="mailto:markowski.ux@gmail.com">chat</a>!</p>
-           <br>
+            <a href="#home" class="flex items-center">
+                <span class="text-2xl font-extrabold text-gray-800">
+                    Jonathan Markowski
+                </span>
+            </a>
+        
+            <nav class="hidden sm:block">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150">Work</a>
+                <a href="about.html" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150">About</a>
+                <a href="assets/JONATHAN MARKOWSKI Resume.pdf" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150" target="_blank">Resume</a>
+            </nav>
+            
+            <div class="sm:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 p-2 rounded-md transition duration-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden sm:hidden bg-white border-t border-gray-100">
+            <a href="index.html" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium">Work</a>
+            <a href="about.html" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium">About</a>
+            <a href="assets/JONATHAN MARKOWSKI Resume.pdf" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium" target="_blank">Resume</a>
+        </div>
+</header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- PROJECT TITLE AND VISUALS -->
+        <section class="space-y-8">
+            <a href="index.html#projects" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium transition duration-150">
+                &larr; Back
+            </a>
 
 
-             </section>
 
-             
-             <p class="centered"><b>Here's a glimpse into what's currently occupying my time.</b></p>
-             <div class="tile-container">
-                <div class="tile">
-                    <img src="images/b.png" alt="read">
-                    <div class="tile-text">Reading now</div>
+
+
+
+        <!-- TWO COLUMN TEXT BLOCK (Details/Challenges/Tech Stack) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-8 text-indigo-700">Hi there, I'm Jonathan</h2>
+
+            
+<div class="flex space-x-4 items-center">
+    
+    <a href="https://www.linkedin.com/in/jonathan-markowski/" target="_blank" aria-label="LinkedIn Profile" class="text-gray-500 hover:text-blue-600 transition duration-150">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.136-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+    </a>
+
+    <a href="mailto:markowski.me@proton.me" aria-label="Email Me" class="text-gray-500 hover:text-red-600 transition duration-150">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+    </a>
+</div>
+
+<br>
+
+
+            <!-- Grid for two-column layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 text-gray-700">
+                
+                <!-- Left Column: Challenges -->
+                <div>
+                    <p class="text-lg text-gray-600">In the past 5 years, I have learned tremendously from my teammates and by working in various business sectors (weather, saas, transportation, and gaming).</p>
+                  <br>
+                    <p class="text-lg text-gray-600">Currently, I am happy to say that I’ve grown into this mid-level designer role and focused on making a significant impact for over 370,000 customers at Southern California Edison. This involves redesigning the SCE website into a robust self-service platform with a mobile-first design. </p>
+                  <br>
+                    <p class="text-lg text-gray-600">With my design process, I like to think I bring a unique blend of creativity and entrepreneurship that distinguishes myself from other designers. At the core, my process is driven by empathy, observation, creativity, and a drive for simplicity. </p>
+                   <br>
+                    <p class="text-lg text-gray-600">Outside of work, I love to keep my hands and mind busy by tinkering with technology. Whether it’s calibrating a 3D print, restoring my ‘70s Sanyo Cassette deck, or dubbing mini discs there is always something.</p>
+                    <br>
+
+
                 </div>
-                <div class="tile">
-                    <img src="images/a.png" alt="music">
-                    <div class="tile-text">Listening to</div>
-                </div>
-                <div class="tile">
-                    <img src="images/m.png" alt="movie">
-                    <div class="tile-text">Watching</div>
-                </div>
-                <div class="tile">
-                    <img src="images/g.png" alt="game">
-                    <div class="tile-text">Gaming</div>
+                
+                <!-- Right Column: Technologies -->
+                <div>
+                   
+                                <!-- Placeholder for Project Visual/Hero Image -->
+           <div class="overflow-hidden shadow-xl">
+    <img src="images/me.PNG" 
+         alt="Professional headshot of Jonathan Markowski" 
+         class="w-full h-auto object-cover">
+</div>
+            <br>
+<p class="text-center">Product Designer | Professional Tinkerer | Ghibli Enthusiast</p>
+
+                    <h3 class="text-2xl font-semibold mb-3 mt-6">Fun Facts</h3>
+
+                <ul class="list-disc list-inside space-y-3 pl-4">
+                        <li><strong class="font-medium">I founded the Penn State Overwatch division & Collegiate team (2016), competed as a core member, where we ranked #11 in North America</li>
+                        <li><strong class="font-medium">I studied with leading magicians for 7 years to become a Sleight of Hand Mechanic</li>
+                        <li><strong class="font-medium">My favorite movies are Mononoke Hime & Tenet</li>
+                </ul>
                 </div>
             </div>
-            <br>
-            <br>
+        </section>
 
-    <footer class="container">
-        <small>
-            &copy; 2025 • Imagined, Designed, & Coded By Jonathan Markowski. • <a href="https://www.linkedin.com/in/jonathan-markowski/" ><span target="_blank" class="label">LinkedIn</span></a> • <a href="mailto:markowski.ux@gmail.com" target="_blank" class="email-link"><span class="icons"></span>Contact Me</a>
+        <br>
+
+                <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            
+            
+            <div class="space-y-6 text-gray-700">
+
+                
+            </div>
+        </section>
+        <br>
+
+        <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Sleightly Glitched</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>Sleightly Glitched is my design company officially founded in 2025. Its name is a thoughtful play on words that encapsulates the essential duality of UX design: the blend of <b>precision</b> and <b>play</b>.</p>
+                <p><b>'Sleightly'</b> symbolizes mastery, intentionality, and design craft that makes interactions feel effortless. Conversely, <b>'Glitched'</b> champions experimentation and discovery, embracing the happy accidents and unexpected moments that ultimately push design innovation forward.</p>
+           
+            </div>
+        </section>
+        <br>
 
 
-        </small>
+       
+
+
+    </main>
+
+   <footer class="bg-gray-800 text-white p-6 text-center mt-12">
+        <p>&copy; <span id="current-year">2025</span> Jonathan Markowski. All rights reserved.</p>
     </footer>
 
+    <!-- 5. JavaScript for dynamic year update and basic interaction -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Project 1 page loaded.');
 
-
-<!-- Default Statcounter code for markowski.me Portfolio
-https://markowski.me -->
-<script type="text/javascript">
-var sc_project=12544975; 
-var sc_invisible=1; 
-var sc_security="06a824e2"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12544975/0/06a824e2/1/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
-
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-
-
-
+            // Script to automatically update the year in the footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                // Get the current full year (e.g., 2025)
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
 </body>
 </html>

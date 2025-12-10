@@ -2,331 +2,422 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/totoro.png" type="image/png" />
-
-    <title>AccuWeather - User Experience Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccuWeather Now</title>
+    <!-- Load Tailwind CSS CDN for easy, single-file responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import and styling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+        /* Global button style for consistency */
+        .primary-button {
+            box-shadow: 0 4px 6px rgba(45, 100, 245, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .primary-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(45, 100, 245, 0.6);
+        }
+        /* Style for the project visual placeholder */
+        .project-visual {
+            height: 400px;
+            background-color: #e0e7ff; /* light indigo */
+            border: 4px dashed #6366f1; /* indigo-500 */
+        }
+        /* Ensure max-w-7xl content is centered and responsive */
+        .max-w-7xl {
+            max-width: 80rem; /* Increased max width for content */
+        }
+    </style>
 </head>
-<body>
+<body class="text-gray-800">
 
-
-    <nav class="container-fluid">
-        <ul>
-          <li class="dropdown">
-            <a href="index.html" class="dropbtn">Projects ⌄</a>
-            <div class="dropdown-content">
-              <a href="sce.html">SCE Redesign</a>
-              <a href="accuweather.html">AccuWeather Now</a>
-              <a href="catabus.html">CATA Bus</a>
-              <a href="healthactivity.html">Health & Activities</a>
+  <header class="shadow-md bg-white sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            
+            <a href="#home" class="flex items-center">
+                <span class="text-2xl font-extrabold text-gray-800">
+                    Jonathan Markowski
+                </span>
+            </a>
+        
+            <nav class="hidden sm:block">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150">Work</a>
+                <a href="about.html" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150">About</a>
+                <a href="assets/JONATHAN MARKOWSKI Resume.pdf" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150" target="_blank">Resume</a>
+            </nav>
+            
+            <div class="sm:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 p-2 rounded-md transition duration-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
             </div>
-          </li>
-          <li><a href="about.html" class="dropbtn">About</a></li>
-          <li><a href="https://markowski.me/assets/RESUME.pdf" target="_blank" class="dropbtn">Resume</a></li>
-        </ul>
-      </nav>
+        </div>
+
+        <div id="mobile-menu" class="hidden sm:hidden bg-white border-t border-gray-100">
+            <a href="index.html" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium">Work</a>
+            <a href="about.html" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium">About</a>
+            <a href="assets/JONATHAN MARKOWSKI Resume.pdf" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium" target="_blank">Resume</a>
+        </div>
+        </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- PROJECT TITLE AND VISUALS -->
+        <section class="space-y-8">
+            <a href="index.html#projects" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium transition duration-150">
+                &larr; Back to Projects
+            </a>
 
 
-    <main class="container">
-        <div class="single-column">
-
-
-                    <h1 class="centered-title">AccuWeather Now</h1>
-                    <h5 class="centered"> 2022 was the year AccuWeather integrated a 24/7 live video feature to each of their platforms. A staggering consumer base of 1.5 billion individuals has been endowed with a comprehensive feature, designed to seamlessly address all their weather-related questions.</h2>
-                    <img src="images/AW/overview.png" alt="Streamline App Interface" class="header-img">
-                    <p>In adherence to the terms of my confidentiality agreement, certain proprietary details have been excluded from the provided case study.</p>
-                
-                <section id="quotes">
-                    <h6 class="centered">"Jonathan brings tremendous initiative to his projects, and is always eager to make a positive impact to both the business and users alike. While his 3 month stay as a UX Intern was brief, he helped standardize UX templates, and shape up experiences for high-profile projects. I highly recommend Jonathan to any organization who values an entrepreneurial team player with a passion for creating solutions that matter."</h5>
-                    <h6 class="bradley">-Bradley Hebdon (UX Leader)</h4>
-                    <br>
-
-
-
-
-
-                    <nav class="floating-nav">
-                        <ul>
-                            
-                            <li><a href="#section2">Challenge</a></li>
-                            <li><a href="#section3">Research</a></li> 
-                            <li><a href="#section4">Iteration 1</a></li>
-                            <li><a href="#section5">Feedback</a></li>                    
-                            <li><a href="#section6">Iterations</a></li>
-                            <li><a href="#section7">Result</a></li>                    
-                            <li><a href="#section8">Reflections</a></li>
-                            
-                        </ul>
-                    </nav>
-                </section>
-
-
-                <script>
-                    // JavaScript to toggle navbar visibility based on scroll position
-                    window.addEventListener('scroll', function() {
-                        var navbar = document.querySelector('.floating-nav');
-                        if (window.pageYOffset > 500) {
-                            navbar.style.visibility = 'visible';
-                            navbar.style.opacity = '1';
-                        } else {
-                            navbar.style.visibility = 'hidden';
-                            navbar.style.opacity = '0';
-                        }
-                    });
-                    </script>
-
-
-<section class="section">
-    <h2>My Role</h2>
-    <p> During my three month internship, I was part of a Design team of 11 individuals. I worked closely with three senior designers on the AccuWeather Now video feature and the Health & Activities page for both mobile application and desktop website. </p> 
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     
-    <P>My internship ended during the A/B testing phase for each of these projects as the designs were finalized. </P>
-    <br>
-    <br>
-    <br>
-    <br>
-     </section>
-
-
-     <section class="section" id="section2">
-        <p>The Challenge</p>
-        <h2>The Countdown Starts, Now!</h2>
-        <p>Upon joining AccuWeather's design team, I had the challenge to learn as much as I could and maximizing my impact within a three-month time-frame. My UX Leader gave me three main tasks;</p>
-        <p>1. Craft a comprehensive user experience for the AccuWeather Now video feature seamlessly integrated into the mobile application.</p>
-        <p>2. Enhance the user experience of the Health & Activities web page by implementing improved experiences and click rate to the design and functionality.</p>
-        <p>3. Develop a set of UX templates and standards to be utilized by the UX team in upcoming projects, promoting consistency and efficiency in the design process. </p>
-        <br>
-        <p>Navigating the intricacies of each project, which spanned across mobile (iOS & Android) platforms and their desktop/mobile website, presented a formidable challenge. Fast learning and effective time management were indispensable skills that enabled me to have meaningful work.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-    </section>
-
-
-
-
-    <section class="section" id="section3">
-        <p> Learning the Service </p>
-        <h2>Putting on My Reading Glasses</h2>
-        <p>Entering the agile environment characterized by two-week sprints, I integrated into the design team during the project's midpoint. Due to my arrival post the initiation phase encompassing the creation of user personas, surveys, and interviews, a substantial portion of my initial week was devoted to acquainting myself with the intricacies of the existing AccuWeather Now feature on their website.</p>
-        <br>	
-        <div class="image fit"><img src="images/AW/AWN SERVICE.png" style="width:100%;"alt="" /></div>
-        <br>
-        <p>The web-version of AccuWeather Now, was at its initial stages. I found that it was a simple video player that would link users to a larger video wall. In-order to effectively create my own experiences I wanted to first look over the previously recorded user interviews.</p>
-            <p>I learned from the recorded user interviews that many of the pain points of the current AccuWeather Now video feature was its interaction rate. Many users did not want to interact with the video player even though it was on the landing page. Since the user arrived at the AccuWeather website for another task they found it more troublesome than helpful.</p>
-            <p>From this nice insight, I knew that I had to integrate a video feature so that it would not feel intrusive but desirable to interact with.</p>
-            <br>
-            <br>
-            <br>
-            <br>
-        </section>
-
-        <section class="section">
-            <p>Discovery</p>
-            <h2>What's Happening Over There?</h2>
-            <p>To maintain an empathetic design approach, I documented users' preferences for this new feature by jotting down quotes from their interviews.</p>
-				<P>From this point I wanted an even closer look at what current users are familiar with, so I created a competitor analysis of seven of other companies that also use live video players on their platforms.  </P>
-				<p>I not only wanted to understand the end-users but also business goals in-order to do so I started analyzing the different revenue models and features that the competitors use and hopefully identify potential opportunities for AccuWeather to establish innovative streams. </p>
-				<p>I uncovered six primary revenue streams and categorized each with a color logo, a gray logo, and an X to denote the streams in use, potential new streams, and unlikely options, respectively. </p>
-              <br>
-                <div class="row">
-                    <div class="column">
-                      <img src="images/AW/Page 3 Research Phase.png" alt="" style="width:100%">
-                    </div>
-                    <div class="column">
-                      <img src="images/AW/Page 3b Research Phase.png" alt="" style="width:100%">
-                    </div>
-                    <br>
-                    <br>
-                    <P>Next, I decided to take a look at some of the most popular video streaming applications to our targeted age ranges, from the existing user personas. Among these seven different application I found there were five standout features paired with video player features. </P>
-                   <br>
-                    <div class="row">
-                        <div class="column">
-                          <img src="images/AW/Page 4 features.png" alt="" style="width:100%">
-                        </div>
-                        <div class="column">
-                          <img src="images/AW/Page 4b features.png" alt="" style="width:100%">
-                        </div>
-
-                    <div class="row">
-                        <div class="column">
-                          <img src="images/AW/Page 5 features.png" alt="" style="width:100%">
-                        </div>
-                        <div class="column">
-                          <img src="images/AW/Page 5b features.png" alt="" style="width:100%">
-                        </div>
-
-
-                        <div class="row">
-                            <div class="column">
-                              <img src="images/AW/Page 6a features.png" alt="" style="width:100%">
-                            </div>
-                            <div class="column">
-                              <img src="images/AW/Page 6b features.png" alt="" style="width:100%">
-                            </div>
-                </div>
-                <br>
-            <br>
-            <br>
-            <br>
-        </section>
-        
-        <section class="section" id="section4">
-            <p> Design Framework </p> 
-            <h2>Pencil to Paper</h2>
-            <p>I wanted to create a design that aligns seamlessly with user feedback and our business objectives, emphasizing aspects such as accessibility, non-intrusiveness, the avoidance of obstructing ad banners, and the promotion of Call to Actions (CTAs), my initial design seamlessly integrated the fly-out player with the live video banner.</p>
-            <p>I opted to use these two features as one . Allowing the user to interact with the weather features in the application and give quick access to the video player to those interested in watching weather-related videos. </p>
-            <br>
-            <div class="image centered">
-                <div class="row gtr-50 gtr-uniform">
-                
-                    <img src="images/AW/Frame 163.png"
-                    style="width:100%;">
+    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 text-center mb-4">
+        AccuWeather Now
+    </h1>
     
-                    </div>
-    
-    
+    <p class="text-xl text-gray-600 text-center mb-10">
+                2022 was the year AccuWeather integrated a 24/7 live video feature to each of their platforms. A staggering consumer base of 1.5 billion individuals has been endowed with a comprehensive feature, designed to seamlessly address all their weather-related questions.
+    </p>
+
+    <div class="flex justify-center">
+        </div>
+
+</div>
+
+                    <!-- Placeholder for Project Visual/Hero Image -->
+            <div class="shadow-xl">
+                <img src="images/aw/overview.png" 
+                alt="AWN Overview" 
+                class="w-full h-auto object-cover">
             </div>
-            <p>The bar design was thoughtfully derived from the bottom bar feature, with a deliberate focus on maintaining a non-intrusive aesthetic and encouraging CTAs as users explore the newly integrated feature. </p>
-            <p>Positioned at the bottom of the screen with a subtle hover effect, the bar ensures easy visibility and draws attention in a discreet manner. Upon tapping the banner, it seamlessly expands into a fly-out video player, complete with intuitive buttons for play/pause, mute, and minimize.</p>
-            <p>The flexibility to resize and relocate the fly-out provides users the freedom to explore other aspects of the app without the video obstructing specific elements.</p>
-               
-            <br>
-            <br>
-            <br>
-            <br>
+            <p>"Jonathan brings tremendous initiative to his projects, and is always eager to make a positive impact to both the business and users alike. While his 3 month stay as a UX Intern was brief, he helped standardize UX templates, and shape up experiences for high-profile projects. I highly recommend Jonathan to any organization who values an entrepreneurial team player with a passion for creating solutions that matter."
+-Bradley Hebdon (UX Leader)</p>
         </section>
 
-        <section class="section" id="section5">
-            <p> Some Quick Feedback </p>
-            <h2>Adjustments To Be Made</h2>
-            <p>During one of our feedback sessions, a senior designer pointed out a crucial flaw in my design. The floating banner was obstructing an ad banner, rendering the functionality of the fly-out player impractical.</p>
-            <p>I tried my best to salvage this particular design since it was among my first. I looked at the live AccuWeather website and found a floating feedback bar. I tried to adapt it to my design but found it obstructed graphics in the application to I had to find a different solution.</p>
-                    <div class="image centered">
-                <div class="row gtr-50 gtr-uniform">
-        
-                    <img src="images/AW/Page 9 Explorations cont.png"
-                    style="width:100%;">
-        
-                </div>            <br>
-            <br>
-            <br>
-            <br>
+
+        <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Project Overview and Role</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>During my three month internship, I was part of a Design team of 11 individuals. I worked closely with three senior designers on the AccuWeather Now video feature and the Health & Activities page for both mobile application and desktop website. </p>
+                <p>My internship ended during the A/B testing phase for each of these projects as the designs were finalized.</p>
+            </div>
         </section>
 
-        <section class="section" id="section6">
-            <p> Design Framework </p>
-            <h2>Musical Defeat?</h2>
-            <p>After that meeting I felt as if I had to start from square one all over again. So I decided to turn on my music and get back to the design process. But I noticed something amazing as I navigated my music player. It was just what I needed. Most if not all of our target users are familiar with streaming music applications, so adding a feature that is similar would keep our AccuWeather application intuitive.</p>
-            <div class="image centered">
-                <div class="row gtr-50 gtr-uniform">
+                <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">The Countdown Starts, Now!</h2>
+            <h2>The Challenge</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>Upon joining AccuWeather's design team, I had the challenge to learn as much as I could and maximizing my impact within a three-month time-frame. My UX Leader gave me three main tasks;</p>
+                 <ul class="list-disc list-inside space-y-3 pl-4">
+                        <li><strong class="font-medium"></strong>Craft a comprehensive user experience for the AccuWeather Now video feature seamlessly integrated into the mobile application.</li>
+                        <li><strong class="font-medium"></strong>Enhance the user experience of the Health & Activities web page by implementing improved experiences and click rate to the design and functionality.</li>
+                        <li><strong class="font-medium"></strong>Develop a set of UX templates and standards to be utilized by the UX team in upcoming projects, promoting consistency and efficiency in the design process.</li>
+                </ul>
+                <p>Navigating the intricacies of each project, which spanned across mobile (iOS & Android) platforms and their desktop/mobile website, presented a formidable challenge. Fast learning and effective time management were indispensable skills that enabled me to have meaningful work.</p>
+            </div>
+        </section>
+
+                <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Putting On My Reading Glasses</h2>
+            <h2>Learning the Service</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>Entering the agile environment characterized by two-week sprints, I integrated into the design team during the project's midpoint. Due to my arrival post the initiation phase encompassing the creation of user personas, surveys, and interviews, a substantial portion of my initial week was devoted to acquainting myself with the intricacies of the existing AccuWeather Now feature on their website.</p>
                 
-                    <img src="images/AW/Frame 164.png"
-                    style="width:100%;">
+            <div class="shadow-xl">
+                <img src="images/aw/1.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+
+                <P>The web-version of AccuWeather Now, was at its initial stages. I found that it was a simple video player that would link users to a larger video wall. In-order to effectively create my own experiences I wanted to first look over the previously recorded user interviews.</P>
+                <p>I learned from the recorded user interviews that many of the pain points of the current AccuWeather Now video feature was its interaction rate. Many users did not want to interact with the video player even though it was on the landing page. Since the user arrived at the AccuWeather website for another task they found it more troublesome than helpful.</p>
+                <p>From this nice insight, I knew that I had to integrate a video feature so that it would not feel intrusive but desirable to interact with.</p>
+            </div>
+        </section>
+
+                <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">What's Happening Over There?</h2>
+            <h2></h2>
             
-                </div>
+            <div class="space-y-6 text-gray-700">
+                <p>To maintain an empathetic design approach, I documented users' preferences for this new feature by jotting down quotes from their interviews.</p>
+                <p>From this point I wanted an even closer look at what current users are familiar with, so I created a competitor analysis of seven of other companies that also use live video players on their platforms.</p>
+                <p>I not only wanted to understand the end-users but also business goals in-order to do so I started analyzing the different revenue models and features that the competitors use and hopefully identify potential opportunities for AccuWeather to establish innovative streams.</p>
+                <p>I uncovered six primary revenue streams and categorized each with a color logo, a gray logo, and an X to denote the streams in use, potential new streams, and unlikely options, respectively.</p>
+
+            </div>
+        </section>
+
+
+        <!-- TWO COLUMN TEXT BLOCK (Details/Challenges/Tech Stack) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+
             
-                    <br>
-                    <br>
-            
-            <p>At the upper part of the bottom toolbar, there is a half-circle featuring a notification indicator in the form of a red dot. This deliberate design prompts user interaction and curiosity. Tapping or swiping this semi-circle causes a video window to emerge, providing an engaging and intuitive way for users to access video content.</p>
-            <p>Considering both user and business objectives, the semi-circle design serves a dual purpose, ensuring the accessibility and non-intrusiveness of the video feature. The incorporated notification indicator stimulates user curiosity, encouraging exploration of this feature in an intuitive manner. In response to previous feedback sessions, particular attention was given to avoid obscuring any ad banners present in the live application, aligning the design with practical considerations and user experience optimization.</p>
-            
-            
-            <div class="image centered">
-                <div class="row gtr-50 gtr-uniform">
+            <!-- Grid for two-column layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 text-gray-700">
                 
-                    <img src="images/AW/Frame 165.png"
-                    style="width:100%;">
-            
+                <!-- Left Column: Challenges -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/aw/2.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
                 </div>
-                <br>
-                <p>The user flow chart above illustrates the seamless process of switching between various videos by simply tapping on the desired selection. In the second figure, I introduced category tags inspired by my previous competitor research. This strategic addition aims to bring order to the potentially chaotic video overview page and assist users in locating specific types of videos, even when they may not know the exact name to search.</p>
-                        <br>
-            <br>
-            <br>
-            <br>
+                
+                <!-- Right Column: Technologies -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/aw/2b.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section" id="section7">
-            <p> What We See Now </p> 
-            <h2>Times Up</h2>
-            <p>Although my internship concluded before witnessing the project through its final stages, I was delighted to encounter the implemented feature approximately a month later.</p>
-			<p>While I observed slight alterations to some of the designs, I am beyond happen to still see my tray design present! Notably, I took the initiative to calculate the potential ad revenue, factoring in previous metrics, projected growth, and the number of click-rates from both new and existing users. The conservative estimate revealed a promising <b>39% potential increase in ad revenue</b> attributed to the incorporation of this video feature.</p>
-			<br>
-
-			<img src="images/AW/accuweather app live.PNG"
-			style="width:100%;">
-            <br>
-            <br>
-            <br>
-            <br>
+                <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Project Overview and Role</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>Next, I decided to take a look at some of the most popular video streaming applications to our targeted age ranges, from the existing user personas. Among these seven different application I found there were five standout features paired with video player features. </p>
+                 
+            </div>
         </section>
 
-        <section class="section" id="section8">
-            <p> Reflections </p>
-            <h2>Is The Really The End?</h2>
-            <p>Looking back at my internship with AccuWeather, Designing with the team at AccuWeather was a genuine joy for me. The collaborative atmosphere, coupled with the guidance from the design lead, allowed me to immerse myself in the creative process without the distractions of company politics. I am sincerely grateful to, Bradley, the design lead for shielding me from such concerns and providing an environment that prioritized learning and meaningful design contributions over typical 'intern' projects.</p>
-            <p>On the flip side, one aspect that posed a challenge was navigating around the dated design constraints imposed by ads. Despite my efforts in competitor and revenue analysis, I found it challenging to discuss potential improvements with the relevant stakeholders. However, this experience taught me the importance of communication and advocacy in bringing about design enhancements, even in areas as sensitive as ad integration.</p>
-            <p>What stood out most during my internship was the realization that I derived genuine satisfaction from both ends of the design spectrum. Understanding the intricacies of a specific project and comprehending its broader impact on the company became equally gratifying for me. This newfound appreciation for the holistic view of the design process is something I carry forward with me as a valuable insight gained during my time at AccuWeather.</p>
-            <br>
-            <p class="centered">• • •</p>
+         <!-- TWO COLUMN TEXT BLOCK (Details/Challenges/Tech Stack) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+
+            
+            <!-- Grid for two-column layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 text-gray-700">
+                
+                <!-- Left Column: Challenges -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/aw/3.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+                
+                <!-- Right Column: Technologies -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/aw/3b.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+            </div>
         </section>
-        
-        <footer class="section">
-            <p>Thank you to everyone on the AccuWeather design team. I am genuinely humbled and awed by the talent and expertise each of you possess. The learning experience with all of you has been invaluable. I recognize that I have so much more to learn, and your collective dedication and positive mindset has motivated me to strive even harder as I continue my journey forward.</p>
-        </footer>
+
+                <!-- TWO COLUMN TEXT BLOCK (Details/Challenges/Tech Stack) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+
+            
+            <!-- Grid for two-column layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 text-gray-700">
+                
+                <!-- Left Column: Challenges -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/aw/4.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+                
+                <!-- Right Column: Technologies -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/aw/4b.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- TWO COLUMN TEXT BLOCK (Details/Challenges/Tech Stack) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+
+            
+            <!-- Grid for two-column layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 text-gray-700">
+                
+                <!-- Left Column: Challenges -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/aw/5.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+                
+                <!-- Right Column: Technologies -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/aw/5b.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Pencil To Paper</h2>
+            <h2>Design Framework</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>I wanted to create a design that aligns seamlessly with user feedback and our business objectives, emphasizing aspects such as accessibility, non-intrusiveness, the avoidance of obstructing ad banners, and the promotion of Call to Actions (CTAs), my initial design seamlessly integrated the fly-out player with the live video banner.</p>
+                <p>I opted to use these two features as one . Allowing the user to interact with the weather features in the application and give quick access to the video player to those interested in watching weather-related videos. </p> 
+<div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 w-full">
+
+    <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg">
+        <img src="images/aw/6.png" 
+             alt=" " 
+             class="w-full h-auto object-cover">
     </div>
 
-    <footer class="container">
-        <small>
-            &copy; 2025 • Imagined, Designed, & Coded By Jonathan Markowski. • <a href="https://www.linkedin.com/in/jonathan-markowski/" ><span target="_blank" class="label">LinkedIn</span></a> • <a href="mailto:markowski.ux@gmail.com" target="_blank" class="email-link"><span class="icons"></span>Contact Me</a>
+    <div class="w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg">
+        <img src="images/aw/6b.png" 
+             alt=" " 
+             class="w-full h-auto object-cover">
+    </div>
+    
+</div>
+                <p>The bar design was thoughtfully derived from the bottom bar feature, with a deliberate focus on maintaining a non-intrusive aesthetic and encouraging CTAs as users explore the newly integrated feature. </p>
+                <p>Positioned at the bottom of the screen with a subtle hover effect, the bar ensures easy visibility and draws attention in a discreet manner. Upon tapping the banner, it seamlessly expands into a fly-out video player, complete with intuitive buttons for play/pause, mute, and minimize.</p>
+                <p>The flexibility to resize and relocate the fly-out provides users the freedom to explore other aspects of the app without the video obstructing specific elements.</p>
+
+            </div>
+        </section>
+
+         <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Adjustments To Be Made</h2>
+            <h2>Some Quick Feedback</h2>
+            <div class="space-y-6 text-gray-700">
+           <p>During one of our feedback sessions, a senior designer pointed out a crucial flaw in my design. The floating banner was obstructing an ad banner, rendering the functionality of the fly-out player impractical.</p>
+           <p>I tried my best to salvage this particular design since it was among my first. I looked at the live AccuWeather website and found a floating feedback bar. I tried to adapt it to my design but found it obstructed graphics in the application to I had to find a different solution.</p>
+            <div class="shadow-xl">
+                <img src="images/aw/7.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+
+            </div>
+        </section>
+
+         <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Musical Defeat?</h2>
+            <h2>Design Framework</h2>
+            <div class="space-y-6 text-gray-700">
+               <p>After that meeting I felt as if I had to start from square one all over again. So I decided to turn on my music and get back to the design process. But I noticed something amazing as I navigated my music player. It was just what I needed. Most if not all of our target users are familiar with streaming music applications, so adding a feature that is similar would keep our AccuWeather application intuitive.</p>
+            <div class="shadow-xl">
+                <img src="images/aw/8.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+
+               <p>At the upper part of the bottom toolbar, there is a half-circle featuring a notification indicator in the form of a red dot. This deliberate design prompts user interaction and curiosity. Tapping or swiping this semi-circle causes a video window to emerge, providing an engaging and intuitive way for users to access video content.</p>
+                <p>Considering both user and business objectives, the semi-circle design serves a dual purpose, ensuring the accessibility and non-intrusiveness of the video feature. The incorporated notification indicator stimulates user curiosity, encouraging exploration of this feature in an intuitive manner. In response to previous feedback sessions, particular attention was given to avoid obscuring any ad banners present in the live application, aligning the design with practical considerations and user experience optimization.</p>
+            <div class="shadow-xl">
+                <img src="images/aw/9.png" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                <p>The user flow chart above illustrates the seamless process of switching between various videos by simply tapping on the desired selection. In the second figure, I introduced category tags inspired by my previous competitor research. This strategic addition aims to bring order to the potentially chaotic video overview page and assist users in locating specific types of videos, even when they may not know the exact name to search.</p>
+
+            </div>
+        </section>
+
+         <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Times Up</h2>
+            <h2>What We See Now</h2>
+            <div class="space-y-6 text-gray-700">
+                <p>Although my internship concluded before witnessing the project through its final stages, I was delighted to encounter the implemented feature approximately a month later.</p>
+                <p>While I observed slight alterations to some of the designs, I am beyond happen to still see my tray design present! Notably, I took the initiative to calculate the potential ad revenue, factoring in previous metrics, projected growth, and the number of click-rates from both new and existing users. The conservative estimate revealed a promising 39% potential increase in ad revenue attributed to the incorporation of this video feature.</p>
+
+            <div class="shadow-xl">
+                <img src="images/aw/10.PNG" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+
+            </div>
+        </section>
+
+         <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Is This Really The End?</h2>
+            <h2>Reflections</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>Looking back at my internship with AccuWeather, Designing with the team at AccuWeather was a genuine joy for me. The collaborative atmosphere, coupled with the guidance from the design lead, allowed me to immerse myself in the creative process without the distractions of company politics. I am sincerely grateful to, Bradley, the design lead for shielding me from such concerns and providing an environment that prioritized learning and meaningful design contributions over typical 'intern' projects.</p>
+                <p>On the flip side, one aspect that posed a challenge was navigating around the dated design constraints imposed by ads. Despite my efforts in competitor and revenue analysis, I found it challenging to discuss potential improvements with the relevant stakeholders. However, this experience taught me the importance of communication and advocacy in bringing about design enhancements, even in areas as sensitive as ad integration.</p>
+                <p>What stood out most during my internship was the realization that I derived genuine satisfaction from both ends of the design spectrum. Understanding the intricacies of a specific project and comprehending its broader impact on the company became equally gratifying for me. This newfound appreciation for the holistic view of the design process is something I carry forward with me as a valuable insight gained during my time at AccuWeather. </p>
+                <p class="text-center">• • •</p>
+                <p>Thank you to everyone on the AccuWeather design team. I am genuinely humbled and awed by the talent and expertise each of you possess. The learning experience with all of you has been invaluable. I recognize that I have so much more to learn, and your collective dedication and positive mindset has motivated me to strive even harder as I continue my journey forward.</p>
+            </div>
+        </section>
 
 
-        </small>
+
+    </main>
+
+   <footer class="bg-gray-800 text-white p-6 text-center mt-12">
+        <p>&copy; <span id="current-year">2025</span> Jonathan Markowski. All rights reserved.</p>
     </footer>
 
+    <!-- 5. JavaScript for dynamic year update and basic interaction -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Project 1 page loaded.');
 
+            // Script to automatically update the year in the footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                // Get the current full year (e.g., 2025)
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
 
-        </div>
-        
-        
+    <script>
+        // Select the button and the menu content using their IDs
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        // Add a click event listener to the button
+        menuButton.addEventListener('click', () => {
+            // The classList.toggle('hidden') method adds the 'hidden' class if it's not present,
+            // and removes it if it is present. This is what makes the menu appear/disappear.
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
-
-<!-- Default Statcounter code for markowski.me Portfolio
-https://markowski.me -->
-<script type="text/javascript">
-var sc_project=12544975; 
-var sc_invisible=1; 
-var sc_security="06a824e2"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12544975/0/06a824e2/1/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
-
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-
-
+    
 </body>
-
 </html>

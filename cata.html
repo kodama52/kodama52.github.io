@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATA Bus: Mobile App Redesign</title>
+    <!-- Load Tailwind CSS CDN for easy, single-file responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import and styling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+        /* Global button style for consistency */
+        .primary-button {
+            box-shadow: 0 4px 6px rgba(45, 100, 245, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .primary-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(45, 100, 245, 0.6);
+        }
+        /* Style for the project visual placeholder */
+        .project-visual {
+            height: 400px;
+            background-color: #e0e7ff; /* light indigo */
+            border: 4px dashed #6366f1; /* indigo-500 */
+        }
+        /* Ensure max-w-7xl content is centered and responsive */
+        .max-w-7xl {
+            max-width: 80rem; /* Increased max width for content */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- 1. Navigation Header (Responsive & Sticky) -->
+    <header class="shadow-md bg-white sticky top-0 z-10">
+               <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            
+            <a href="#home" class="flex items-center">
+                <span class="text-2xl font-extrabold text-gray-800">
+                    Jonathan Markowski
+                </span>
+            </a>
+        
+            <nav class="hidden sm:block">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150">Work</a>
+                <a href="about.html" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150">About</a>
+                <a href="assets/JONATHAN MARKOWSKI Resume.pdf" class="text-gray-600 hover:text-indigo-600 font-medium px-3 transition duration-150" target="_blank">Resume</a>
+            </nav>
+            
+            <div class="sm:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 p-2 rounded-md transition duration-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden sm:hidden bg-white border-t border-gray-100">
+            <a href="index.html" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium">Work</a>
+            <a href="about.html" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium">About</a>
+            <a href="assets/JONATHAN MARKOWSKI Resume.pdf" class="block text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-4 py-2 text-base font-medium" target="_blank">Resume</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- PROJECT TITLE AND VISUALS -->
+        <section class="space-y-8">
+            <a href="index.html#projects" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium transition duration-150">
+                &larr; Back to Projects
+            </a>
+           <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 text-center mb-4">
+        CATA Bus: Mobile App Redesign
+    </h1>
+    
+    <p class="text-xl text-gray-600 text-center mb-10">As of 2019, a total of 338,000 Pennsylvania residents relied on public transit as their primary mode of commuting. Fast forward to 2022, and we witness a remarkable year-over-year surge of approximately 39 percent in transit usage.</p>
+    <p class="text-xl text-gray-600 text-center mb-10">While pursuing my university studies, I had the privilege of being part of a new product team tasked with revamping the user experience for a rapidly expanding industry. </p>
+
+
+
+        </section>
+        <div class="flex justify-center">
+        </div>           
+            <!-- Placeholder for Project Visual/Hero Image -->
+            <div class="shadow-xl">
+                <img src="images/cata/1 9.gif" 
+                alt="CATA app prototype" 
+                class="w-full h-auto object-cover">
+            </div>
+                            <p>In adherence to the terms of my confidentiality agreement, certain proprietary details have been excluded from the provided case study.</p>
+
+
+
+
+ <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">My Role</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>During my two-year internship, I collaborated within a dynamic Design team comprising four individuals. This close-knit group included a designer, two developers, and a senior marketer, with whom I worked closely to achieve our objectives. </p>
+                <p>My internship concluded upon the successful launch of the application, allowing me to take part in the entire lifecycle of the project from inception to completion. </p>
+
+            </div>
+        </section>
+
+ <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Making My Checklist</h2>
+            <h2>Learning The Service</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>Upon joining CATA design team, I had the challenge to understand the current situation with the mobile application. After some brief research I found that the current application suffers from frequent crashes causing unreliable bus information and many hidden features, which has led to a significant 62% decrease in user downloads for the original CATA application. Additionally, it has garnered a dismal customer rating of 1.7 out of 5.0 on the App Store, highlighting the dissatisfaction among users with its performance and usability.</p>
+                <p><center>• • •</center></p>
+                <p>Following discussions with key stakeholders, it has been identified that the CATA Bus app should focus on the following key features:</p>
+                 <ul class="list-disc list-inside space-y-3 pl-4">
+                        <li><strong class="font-medium"></strong>Real-time Bus Tracking: Implement functionality that allows users to track the location of buses in real-time. This will enable users to plan their journeys more effectively by knowing the exact whereabouts of their bus.</li>
+                        <li><strong class="font-medium"></strong>Alerts and Notifications: Incorporate a system for delivering alerts and notifications to users regarding delays, cancellations, or changes in bus schedules. This feature will empower users to adjust their travel plans accordingly, minimizing inconvenience and disruptions.</li>
+                </ul>
+            </div>
+        </section>
+
+ <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Meet & Greet</h2>
+            <h2>Learning The Users</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>In order to appropriately enhance the user experience I wanted to know precisely what our users thought of the application and what they wanted us to add. So instead of starting with user personas and surveys I went out.</p>
+                <p>Venturing out to bus stops, I engaged in meaningful conversations with diverse groups of individuals. Eight generous people graciously shared their time, enabling me to uncover their unique needs and desires. Drawing from these interactions, I swiftly crafted a paper prototype, poised to gather additional feedback from several more cohorts. In total, I conversed with 11 students, 3 faculty members, and 6 visitors.</p>
+            </div>
+        </section>
+
+ <!-- TWO COLUMN TEXT BLOCK (Details/Challenges/Tech Stack) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+
+            
+            <!-- Grid for two-column layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 text-gray-700">
+                
+                <!-- Left Column: Challenges -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/cata/1.JPEG" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+                
+                <!-- Right Column: Technologies -->
+                <div>
+            <div class="shadow-xl">
+                <img src="images/cata/1b.JPEG" 
+                alt=" " 
+                class="w-full h-auto object-cover">
+            </div>
+                </div>
+            </div>
+        </section>
+
+ <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            
+            <div class="space-y-6 text-gray-700">
+                <p>Guiding participants through our current CATA application, I tasked them with finding specific features while encouraging them to vocalize their assumptions. This exercise unearthed a plethora of insights, as I diligently recorded their pain points and conjectures.                </p>
+                 <ul class="list-disc list-inside space-y-3 pl-4">
+                        <li><strong class="font-medium">80%</strong> of users preferred the landing page to be displayed as a map view</li>
+                        <li><strong class="font-medium">55%</strong> of users expressed wanting a section for favorite routes and bus schedules.</li>
+                        <li><strong class="font-medium">35%</strong> agree there should be an easily accessible method to reach the bus schedule feature</li>
+                </ul>
+            </div>
+        </section>
+      
+        
+ <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Where's My Bus</h2>
+            <h2> Discovery + Iterations</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>To guarantee that my designs would be both impactful and meaningful, I decided to take some notes about our currently live app. </p>
+                <p>In reviewing the current iteration of the app, I observed several graphical anomalies in the top bar, along with crucial information gaps for riders within the bus list and bus stop location sections. These deficiencies were flagged with an orange icon for further attention.</p>
+
+                <div class="shadow-xl flex justify-center">
+                  <img src="images/cata/3.png" 
+                  alt=" " 
+                  class="w-1/2 h-auto object-cover">
+                </div>
+                
+
+            <p>From my field notes and observations of my interviews I started to redesign our landing page of the mobile app by adding several new features; </p>
+
+                <ul class="list-disc list-inside space-y-3 pl-4">
+                        <li><strong class="font-medium"></strong>Favorite pill menu - allows users to easily switch between different bus routes.</li>
+                        <li><strong class="font-medium"></strong>Visual Representation of the bus path - create visually accessible graphic to assist riders when deciding a bus stop.</li>
+                        <li><strong class="font-medium"></strong>Bus Stop Information - added a pop-out to give more information about the specific bus stop riders choose.</li>
+                </ul>
+<div class="shadow-xl flex justify-center">
+    <img src="images/cata/4.png" 
+         alt=" " 
+         class="w-1/2 h-auto object-cover">
+</div>
+            <p>In order to gain appropriate feedback from our end-users, I created a survey to gather data to identify trends the riders enjoy and dislike on the newest mock-up of the app. I received 83 responses. I then classified the data into the several meaningful groups.</p>
+            
+            <!--QUOTES-->
+            <p>"The design is improved, though, there should be easier ways to get information (bus stops) quickly."</p>
+            <p>"The layout looks cool, but I think there are too many colors for what is needed."</p>
+            <p>"The added bus path is great, but I want more information about each stop."</p>
+ 
+        </div>
+        </section>
+
+
+ <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Ticket To Ride</h2>
+            <h2>Final Design</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <p>Following multiple feedback loops, design iterations, and AB testing, I finalized the designs. I decided to change the application's color from blue to red to match the company's logo color. Based off of the rider's feedback, I added several key features, including, a search bar, bus stop details, and a favorite route menu.</p>
+<div class="shadow-xl flex justify-center">
+    <img src="images/cata/5.gif" 
+         alt=" " 
+         class="w-1/2 h-auto object-cover">
+</div>
+                <p>The search bar was implemented for riders to quickly find the bus route or choose from the recently searched list. It was ultimately decided to keep the search bar at the top of the app instead of the bottom third because 48% of the student riders were more familiar with similar features in similar applications. </p>
+<div class="shadow-xl flex justify-center">
+    <img src="images/cata/6.png" 
+         alt=" " 
+         class="w-full h-auto object-cover">
+</div>
+                <p>To address the initial confusion with the application, I've developed a comprehensive pop-up feature tailored specifically for accessing bus stop information. This pop-up closely resembles the traditional bus schedules displayed at each stop, providing riders with a familiar interface. The aim is to assist passengers of all ages in quickly locating and interpreting relevant information without the need for extensive relearning. By streamlining the process, riders can focus on catching their bus with ease, rather than grappling with the intricacies of an app.</p>
+<div class="shadow-xl flex justify-center">
+    <img src="images/cata/7.png" 
+         alt=" " 
+         class="w-full h-auto object-cover">
+</div>
+                <p>Recognizing the significant international presence at Penn State, with over 10% of the student body being international, I made it a priority to enhance the accessibility of our application. As part of this effort, I incorporated a comprehensive settings menu, empowering users to easily switch between units, including the option to convert measurements to metric.</p>
+              
+
+            </div>
+        </section>
+
+
+
+ <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Ride To The Moon</h2>
+            <h2>Impact</h2>
+            
+            <div class="space-y-6 text-gray-700">
+<div class="shadow-xl flex justify-center">
+    <img src="images/cata/1 9.gif" 
+         alt=" " 
+         class="w-full h-auto object-cover">
+</div>
+
+                <p>We launched the application after extensive A/B testing and user interviews via usertesting.com. Over this two week period, my team saw around 60% of participants picking the newer iteration of the application over the original. This gave my team the confidence to have our redesign go live.</p>
+                
+                <p>Over the next 4 months my team and witnessed incredible statistics;</p>
+                <ul class="list-disc list-inside space-y-3 pl-4">
+                    <li><strong class="font-medium"></strong>42% increased user downloads</li>
+                    <li><strong class="font-medium"></strong>80% of Penn State Students switched from third party apps to CATA's official app</li>
+                    <li><strong class="font-medium"></strong>32% Decreased in user reports of inaccurate data</li>
+                </ul>
+            </div>
+        </section>
+
+
+ <!-- ONE COLUMN TEXT BLOCK (Introduction/Summary) -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">Final Destination</h2>
+            <h2>Reflections</h2>
+            
+            <div class="space-y-6 text-gray-700">
+               <p>Navigating through a four-semester-long internship, I encountered a series of challenging situations, particularly as this marked my inaugural venture into the realm of UX design beyond the confines of academia. Having a lot of theoretical knowledge from my studies, I was eager to apply these principles to a live project. However, the transition from theory to practice proved to be more difficult than I had anticipated, presenting me with a many roadblocks and invaluable learning opportunities.</p>
+               <p>One of the most significant challenges I faced at the outset was grappling with imposter syndrome, a common phenomenon among newcomers to any field. As I delved into the intricacies of real-world UX design, I couldn't shake the feeling of inadequacy and self-doubt, questioning whether I truly belonged in this professional environment. Overcoming this internal barrier required much effort to acknowledge my achievements and embrace the learning journey ahead, rather than succumbing to feelings of unworthiness.</p>
+               <p>Communication issues also emerged as a recurring challenge, particularly within the context of team dynamics. Collaborating with diverse individuals with varying backgrounds and perspectives necessitated effective communication and collaboration. However, miscommunications and misunderstandings occasionally arose, leading to friction and discord within the team. Addressing these communication challenges required patience, empathy, and a willingness to actively listen and engage with my colleagues to foster a more cohesive and productive working environment.</p>
+               <p>Furthermore, I grappled with the tendency to rely on assumptions rather than grounding my decisions in empirical data. As a novice UX designer, I often found myself jumping to conclusions or making design choices based on intuition rather than conducting thorough research and analysis. Recognizing the limitations of this approach, I endeavored to create a more data-driven mindset, prioritizing user research and usability testing to inform my design decisions effectively.</p>
+               <p>In hindsight, these challenges, though difficult at the time, served as invaluable learning experiences that ultimately shaped me into a more resilient, adaptable, and empathetic designer. By confronting imposter syndrome head-on, fostering open and transparent communication within the team, and prioritizing data-driven decision-making, I emerged from my internship with newfound confidence and a deeper understanding of the complexities of UX design in practice.</p>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+   <footer class="bg-gray-800 text-white p-6 text-center mt-12">
+        <p>&copy; <span id="current-year">2025</span> Jonathan Markowski. All rights reserved.</p>
+    </footer>
+
+    <!-- 5. JavaScript for dynamic year update and basic interaction -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Project 1 page loaded.');
+
+            // Script to automatically update the year in the footer
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                // Get the current full year (e.g., 2025)
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+
+
+ <script>
+        // Select the button and the menu content using their IDs
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Add a click event listener to the button
+        menuButton.addEventListener('click', () => {
+            // The classList.toggle('hidden') method adds the 'hidden' class if it's not present,
+            // and removes it if it is present. This is what makes the menu appear/disappear.
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    
+</body>
+</html>
